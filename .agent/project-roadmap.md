@@ -27,9 +27,10 @@
 
 ## Milestone 4 - Polish, CI/CD & Deployment
 
-- **Step 1:** Conduct an asset audit: Optimize all images using `next/image` and ensure off-screen elements are lazy-loaded.
+- **Step 1:** Conduct an asset audit: Manually process and optimize all image assets into modern formats (WebP/AVIF) before adding them to `/public`, and ensure off-screen elements are lazy-loaded.
 - **Step 2:** Conduct an accessibility (a11y) audit: Enforce semantic HTML tags, strict ARIA labels, and WCAG-compliant color contrast.
 - **Step 3:** Run local Google Lighthouse audits. Refactor components as needed to secure a 100/100 score across Performance, Accessibility, Best Practices, and SEO.
-- **Step 4:** Configure `next.config.mjs` for a purely static HTML build (`output: 'export'`).
-- **Step 5:** Set up a GitHub Actions workflow to run type-checks, linting, and build validation on every push.
-- **Step 6:** Connect the GitHub repository to Cloudflare Pages for the initial live, automated deployment.
+- **Step 4:** Implement a Playwright End-to-End (E2E) test to verify critical user paths and ensure UI stability.
+- **Step 5:** Configure `next.config.ts` for a purely static HTML build (`output: 'export'`).
+- **Step 6:** Set up a GitHub Actions workflow to run type-checks, linting, and E2E tests on every push.
+- **Step 7:** Connect the GitHub repository to Cloudflare Pages for the initial live, automated deployment.

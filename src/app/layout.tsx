@@ -13,8 +13,18 @@ const nunito = Nunito({
 });
 
 export const metadata: Metadata = {
-  title: "Animal & Cia",
-  description: "Clínica veterinária e pet shop em Brumado, Bahia.",
+  title: {
+    default: "Animal & Cia | Centro Veterinário em Brumado",
+    template: "%s | Animal & Cia",
+  },
+  description: "Centro Veterinário referência em Brumado, Bahia. Oferecemos consultas, exames de sangue, raio-x, ultrassom, cirurgias e internação para o seu pet.",
+  keywords: ["centro veterinário", "clínica veterinária", "Brumado", "Bahia", "veterinário", "exames veterinários", "raio-x animal", "ultrassom veterinário", "cirurgia veterinária", "internação pet", "farmácia veterinária"],
+  openGraph: {
+    title: "Animal & Cia | Centro Veterinário em Brumado",
+    description: "Centro Veterinário referência em Brumado, Bahia. Oferecemos consultas, exames laboratoriais, imagem, cirurgias e internação.",
+    locale: "pt_BR",
+    type: "website",
+  },
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
