@@ -1,2 +1,6 @@
-// Placeholder for font families and sizing scales
-export {};
+export const typography = {
+  fontFamily: {
+    sans: ['var(--font-inter)', 'sans-serif'],
+    heading: ['var(--font-nunito)', 'sans-serif'],
+  },
+};
