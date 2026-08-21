@@ -32,6 +32,7 @@
 - **Static Image Export:** Because the project uses output: 'export', the agent must configure unoptimized: true in next.config.mjs for the next/image component, or explicitly use standard <img /> tags for local assets to prevent build failures on Cloudflare Pages.
 - **Iconography:** Strictly use lucide-react for all SVG icons to maintain a clean, uniform design language.
 - **Mobile-First Styling:** Tailwind classes must be written mobile-first. Base classes apply to mobile screens, with md:, lg:, and xl: prefixes used to scale up the UI for wider screens.
+- **Tailwind Cleanliness:** To keep JSX clean without premature component abstraction, avoid long inline Tailwind class strings. Instead, define reusable Tailwind class strings as constants inside `src/design-system/classes.ts` and import them into components.
 
 ## 5. Optimized Directory Map
 

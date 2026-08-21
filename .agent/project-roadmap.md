@@ -17,6 +17,12 @@
 - **Step 5:** Build a bespoke, responsive Header/Navbar (e.g., sticky or transparent-to-solid on scroll).
 - **Step 6:** Build the base Footer containing standard copyright and quick links.
 
+## Milestone 2.5 - Design System Refactoring
+
+- **Step 1:** Update roadmap and agent rules (Current).
+- **Step 2:** Create `src/design-system/classes.ts` for centralizing UI string constants.
+- **Step 3:** Refactor Header and Footer (and any other necessary files) components to use these centralized classes.
+
 ## Milestone 3 - Premium Frontpage Assembly (The UI)
 
 - **Step 1:** Build the **Hero Section**: Implement an asymmetrical layout with a strong CTA and Framer Motion staggered entry animations.
