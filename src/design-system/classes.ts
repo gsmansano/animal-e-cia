@@ -20,9 +20,11 @@ export const SECTION = {
   },
   
   hero: {
-    wrapper: "relative overflow-hidden bg-slate-50 py-20 lg:py-32",
-    h1: "font-heading text-4xl md:text-5xl lg:text-6xl font-bold text-green-dark mb-6",
-    p: "text-lg md:text-xl text-slate-600 mb-8 max-w-2xl",
+    wrapper: "pt-32 pb-16 md:pt-40 md:pb-24 bg-slate-50 relative overflow-hidden",
+    grid: "max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center",
+    h1: "font-heading text-4xl md:text-5xl lg:text-6xl font-bold text-green-dark mb-6 leading-tight",
+    p: "text-lg text-slate-600 mb-8 max-w-lg",
+    imagePlaceholder: "w-full aspect-[4/3] lg:aspect-square bg-green-light/20 rounded-3xl border-4 border-white shadow-xl flex items-center justify-center",
   },
   
   services: {

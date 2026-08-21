@@ -26,7 +26,7 @@
 ## 4. UI Architecture & Performance
 
 - **Design System Isolation:** All brand colors, custom typography, spacing tokens, and base themes must live inside `/design-system` and be referenced by `tailwind.config.ts`. Do not hardcode arbitrary hex values into component files.
-- **Static Copy Decoupling:** Keep all UI text and copy structured inside `/constants` with strong TypeScript interfaces to separate content from layout logic.
+- **Content Dictionary Pattern:** Never hardcode UI text (headings, paragraphs, button labels) directly in component files. All copy must be centralized inside a `CONTENT` constant in `src/constants/content.ts` and imported into components.
 - **Accessibility (a11y):** Semantic HTML5 tags (`<main>`, `<nav>`, `<section>`, `<header>`, `<footer>`), valid heading hierarchy ($h1 \rightarrow h2 \rightarrow h3$), and descriptive `aria-label` tags for interactive elements.
 - **Lighthouse Performance:** Mandatory optimization using `next/image`, lazy loading for off-screen components, and zero unused dependencies to target a 100/100 Lighthouse score.
 - **Static Image Export:** Because the project uses output: 'export', the agent must configure unoptimized: true in next.config.mjs for the next/image component, or explicitly use standard <img /> tags for local assets to prevent build failures on Cloudflare Pages.
