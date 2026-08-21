@@ -18,6 +18,7 @@ export function Header() {
   const navLinks = [
     { label: 'Serviços', href: '#servicos' },
     { label: 'Sobre', href: '#sobre' },
+    { label: 'Localização', href: '#localizacao' },
     { label: 'Contato', href: '#contato' },
   ];
 
@@ -52,7 +53,7 @@ export function Header() {
             href="#contato"
             className="bg-pink text-white px-6 py-2.5 rounded-full font-bold shadow-sm hover:opacity-90 transition-opacity"
           >
-            Agendar Consulta
+            Fale no WhatsApp
           </Link>
         </div>
 
@@ -96,7 +97,7 @@ export function Header() {
               onClick={() => setIsMobileMenuOpen(false)}
               className="bg-pink text-white text-center px-6 py-3 rounded-full font-bold shadow-sm mt-4"
             >
-              Agendar Consulta
+              Fale no WhatsApp
             </Link>
           </nav>
         </div>
