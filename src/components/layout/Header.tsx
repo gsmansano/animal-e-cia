@@ -3,6 +3,7 @@
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { CLINIC_INFO } from '@/constants/clinic-info';
+import { CONTENT } from '@/constants/content';
 import { GLOBAL, SECTION } from '@/design-system/classes';
 
 export function Header() {
@@ -17,13 +18,6 @@ export function Header() {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  const navLinks = [
-    { label: 'Serviços', href: '#servicos' },
-    { label: 'Sobre', href: '#sobre' },
-    { label: 'Localização', href: '#localizacao' },
-    { label: 'Contato', href: '#contato' },
-  ];
-
   return (
     <header
       className={`${SECTION.header.wrapper.base} ${
@@ -33,12 +27,12 @@ export function Header() {
       <div className={SECTION.header.innerContainer}>
         {/* Logo */}
         <Link href="/" className={SECTION.header.logo}>
-          Animal & Cia
+          {CLINIC_INFO.name}
         </Link>
 
         {/* Desktop Nav */}
         <nav className={SECTION.header.navDesktop}>
-          {navLinks.map((link) => (
+          {CONTENT.header.navLinks.map((link) => (
             <Link
               key={link.href}
               href={link.href}
@@ -57,7 +51,7 @@ export function Header() {
             rel="noopener noreferrer"
             className={GLOBAL.primaryButton}
           >
-            Fale no WhatsApp
+            {CONTENT.header.cta}
           </a>
         </div>
 
@@ -86,7 +80,7 @@ export function Header() {
       {isMobileMenuOpen && (
         <div className={SECTION.header.navMobileDrawer}>
           <nav className={SECTION.header.navMobileContainer}>
-            {navLinks.map((link) => (
+            {CONTENT.header.navLinks.map((link) => (
               <Link
                 key={link.href}
                 href={link.href}
@@ -103,7 +97,7 @@ export function Header() {
               onClick={() => setIsMobileMenuOpen(false)}
               className={`${GLOBAL.primaryButton} text-center w-full mt-4`}
             >
-              Fale no WhatsApp
+              {CONTENT.header.cta}
             </a>
           </nav>
         </div>

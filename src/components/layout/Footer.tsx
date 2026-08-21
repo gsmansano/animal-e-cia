@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import { CLINIC_INFO } from '@/constants/clinic-info';
+import { CONTENT } from '@/constants/content';
 import { GLOBAL, SECTION } from '@/design-system/classes';
 
 export function Footer() {
@@ -8,8 +9,8 @@ export function Footer() {
       <div className={SECTION.footer.innerGrid}>
         {/* Contact Info & Address */}
         <div>
-          <h3 className={`${SECTION.footer.columnHeading} text-2xl`}>Animal & Cia</h3>
-          <p className={`${SECTION.footer.textMuted} mb-2`}>Centro Veterinário</p>
+          <h3 className={`${SECTION.footer.columnHeading} text-2xl`}>{CLINIC_INFO.name}</h3>
+          <p className={`${SECTION.footer.textMuted} mb-2`}>{CONTENT.footer.subtext}</p>
           <address className={`${SECTION.footer.textMuted} text-sm not-italic`}>
             <p>{CLINIC_INFO.address.street}</p>
             <p>{CLINIC_INFO.address.neighborhood}, {CLINIC_INFO.address.city}, {CLINIC_INFO.address.state}</p>
@@ -19,7 +20,7 @@ export function Footer() {
 
         {/* Social Media & Links */}
         <div>
-          <h3 className={SECTION.footer.columnHeading}>Redes Sociais</h3>
+          <h3 className={SECTION.footer.columnHeading}>{CONTENT.footer.sections.social}</h3>
           <ul className={`space-y-3 ${SECTION.footer.textMuted}`}>
             <li>
               <a href={CLINIC_INFO.social.instagram.link} target="_blank" rel="noopener noreferrer" className={SECTION.footer.link}>
@@ -61,18 +62,18 @@ export function Footer() {
 
         {/* WhatsApp QR Code Placeholder */}
         <div>
-          <h3 className={SECTION.footer.columnHeading}>Fale Conosco</h3>
+          <h3 className={SECTION.footer.columnHeading}>{CONTENT.footer.sections.contact}</h3>
           <div className={SECTION.footer.qrBox}>
             <div className={SECTION.footer.qrInner}>
-              <span className="text-sm font-medium">QR Code</span>
+              <span className="text-sm font-medium">{CONTENT.footer.qrCode.label}</span>
             </div>
-            <p className={`${SECTION.footer.textMuted} text-xs font-medium`}>Escaneie para WhatsApp</p>
+            <p className={`${SECTION.footer.textMuted} text-xs font-medium`}>{CONTENT.footer.qrCode.helper}</p>
           </div>
         </div>
       </div>
 
       <div className={SECTION.footer.copyright}>
-        <p>&copy; {new Date().getFullYear()} Animal & Cia. Todos os direitos reservados.</p>
+        <p>&copy; {new Date().getFullYear()} {CLINIC_INFO.name}. {CONTENT.footer.copyright}</p>
       </div>
     </footer>
   );

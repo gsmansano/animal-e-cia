@@ -1,4 +1,5 @@
 export interface ClinicInfo {
+  name: string;
   whatsapp: {
     number: string;
     display: string;
@@ -29,6 +30,7 @@ export interface ClinicInfo {
 }
 
 export const CLINIC_INFO: ClinicInfo = {
+  name: "Animal & Cia",
   whatsapp: {
     number: "5577998680996",
     display: "77 9 9868-0996",
@@ -53,7 +55,7 @@ export const CLINIC_INFO: ClinicInfo = {
     },
   },
   hours: {
-    weekdays: "08:00-12:00 and 14:00-18:00 Mon-Fri",
-    saturday: "08:00-12:00 Sat",
+    weekdays: "08:00 às 12:00 e 14:00 às 18:00 Seg-Sex",
+    saturday: "08:00 às 12:00 Sáb",
   },
 };
