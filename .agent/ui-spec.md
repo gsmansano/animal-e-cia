@@ -54,3 +54,10 @@
 - Social media links (IG / TikTok).
 - Physical address.
 - Standard copyright.
+
+## Clinic Data
+- **WhatsApp / Phone:** 77 9 9868-0996
+- **Address:** R. Euclides da Cunha 92, Centro, Brumado, Bahia. CEP: 46100-149
+- **Instagram:** @animalecia.vet
+- **TikTok:** @animal.cia
+- **Hours:** 08:00-12:00 and 14:00-18:00 Mon-Fri, 08:00-12:00 Sat.

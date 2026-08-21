@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
+import { CLINIC_INFO } from '@/constants/clinic-info';
 
 export function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -49,12 +50,14 @@ export function Header() {
 
         {/* CTA Button */}
         <div className="hidden md:block">
-          <Link
-            href="#contato"
+          <a
+            href={CLINIC_INFO.whatsapp.link}
+            target="_blank"
+            rel="noopener noreferrer"
             className="bg-pink text-white px-6 py-2.5 rounded-full font-bold shadow-sm hover:opacity-90 transition-opacity"
           >
             Fale no WhatsApp
-          </Link>
+          </a>
         </div>
 
         {/* Mobile Menu Toggle */}
@@ -92,13 +95,15 @@ export function Header() {
                 {link.label}
               </Link>
             ))}
-            <Link
-              href="#contato"
+            <a
+              href={CLINIC_INFO.whatsapp.link}
+              target="_blank"
+              rel="noopener noreferrer"
               onClick={() => setIsMobileMenuOpen(false)}
               className="bg-pink text-white text-center px-6 py-3 rounded-full font-bold shadow-sm mt-4"
             >
               Fale no WhatsApp
-            </Link>
+            </a>
           </nav>
         </div>
       )}
