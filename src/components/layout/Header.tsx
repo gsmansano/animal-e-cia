@@ -3,6 +3,7 @@
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { CLINIC_INFO } from '@/constants/clinic-info';
+import { GLOBAL, SECTION } from '@/design-system/classes';
 
 export function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -25,23 +26,23 @@ export function Header() {
 
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled ? 'bg-white shadow-sm py-4' : 'bg-transparent py-6'
+      className={`${SECTION.header.wrapper.base} ${
+        isScrolled ? SECTION.header.wrapper.scrolled : SECTION.header.wrapper.transparent
       }`}
     >
-      <div className="max-w-7xl mx-auto px-6 flex items-center justify-between">
+      <div className={SECTION.header.innerContainer}>
         {/* Logo */}
-        <Link href="/" className="font-heading text-2xl font-bold text-green-dark">
+        <Link href="/" className={SECTION.header.logo}>
           Animal & Cia
         </Link>
 
         {/* Desktop Nav */}
-        <nav className="hidden md:flex items-center gap-8">
+        <nav className={SECTION.header.navDesktop}>
           {navLinks.map((link) => (
             <Link
               key={link.href}
               href={link.href}
-              className="text-slate-700 hover:text-green-dark transition-colors font-medium"
+              className={SECTION.header.navLink}
             >
               {link.label}
             </Link>
@@ -54,7 +55,7 @@ export function Header() {
             href={CLINIC_INFO.whatsapp.link}
             target="_blank"
             rel="noopener noreferrer"
-            className="bg-pink text-white px-6 py-2.5 rounded-full font-bold shadow-sm hover:opacity-90 transition-opacity"
+            className={GLOBAL.primaryButton}
           >
             Fale no WhatsApp
           </a>
@@ -62,7 +63,7 @@ export function Header() {
 
         {/* Mobile Menu Toggle */}
         <button
-          className="md:hidden text-green-dark p-2 focus:outline-none"
+          className={SECTION.header.mobileMenuBtn}
           onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
           aria-label="Toggle menu"
         >
@@ -83,14 +84,14 @@ export function Header() {
 
       {/* Mobile Menu Drawer */}
       {isMobileMenuOpen && (
-        <div className="md:hidden absolute top-full left-0 right-0 bg-white shadow-lg border-t border-slate-100">
-          <nav className="flex flex-col p-6 gap-4">
+        <div className={SECTION.header.navMobileDrawer}>
+          <nav className={SECTION.header.navMobileContainer}>
             {navLinks.map((link) => (
               <Link
                 key={link.href}
                 href={link.href}
                 onClick={() => setIsMobileMenuOpen(false)}
-                className="text-slate-700 hover:text-green-dark font-medium py-2"
+                className={`${SECTION.header.navLink} py-2`}
               >
                 {link.label}
               </Link>
@@ -100,7 +101,7 @@ export function Header() {
               target="_blank"
               rel="noopener noreferrer"
               onClick={() => setIsMobileMenuOpen(false)}
-              className="bg-pink text-white text-center px-6 py-3 rounded-full font-bold shadow-sm mt-4"
+              className={`${GLOBAL.primaryButton} text-center w-full mt-4`}
             >
               Fale no WhatsApp
             </a>
