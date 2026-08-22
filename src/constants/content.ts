@@ -50,6 +50,10 @@ export const CONTENT = {
       }
     ]
   },
+  location: {
+    sectionTitle: "Onde Estamos",
+    sectionSubtitle: "Venha nos visitar! Nossa clínica possui fácil acesso e excelente infraestrutura para receber você e seu pet.",
+  },
   footer: {
     sections: {
       social: "Redes Sociais",

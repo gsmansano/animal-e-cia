@@ -12,6 +12,7 @@ export interface ClinicInfo {
     state: string;
     cep: string;
     full: string;
+    googleMapsRouteLink: string;
   };
   social: {
     instagram: {
@@ -43,6 +44,7 @@ export const CLINIC_INFO: ClinicInfo = {
     state: "Bahia",
     cep: "46100-149",
     full: "R. Euclides da Cunha 92, Centro, Brumado, Bahia. CEP: 46100-149",
+    googleMapsRouteLink: "https://maps.google.com/?daddr=R.+Euclides+da+Cunha+92,+Centro,+Brumado,+Bahia",
   },
   social: {
     instagram: {

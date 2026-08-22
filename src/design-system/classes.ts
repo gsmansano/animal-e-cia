@@ -54,9 +54,14 @@ export const SECTION = {
   },
   
   location: {
-    wrapper: "py-24 bg-white",
-    h2: "font-heading text-3xl md:text-4xl font-bold text-green-dark mb-8",
-    p: "text-slate-600 mb-6",
+    wrapper: "py-20 bg-slate-50",
+    grid: "grid grid-cols-1 lg:grid-cols-2 gap-12 max-w-7xl mx-auto px-6 items-start",
+    infoWrapper: "flex flex-col space-y-6 sticky top-24",
+    h2: "font-heading text-3xl md:text-4xl font-bold text-green-dark",
+    p: "text-slate-600 text-lg",
+    bentoGrid: "grid grid-cols-2 gap-4",
+    bentoItemWide: "col-span-2 aspect-video bg-slate-200 rounded-2xl overflow-hidden flex items-center justify-center text-slate-500 font-medium",
+    bentoItemSquare: "col-span-1 aspect-square bg-slate-200 rounded-2xl overflow-hidden flex items-center justify-center text-slate-500 font-medium",
   },
 
   footer: {
