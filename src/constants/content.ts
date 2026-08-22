@@ -14,6 +14,28 @@ export const CONTENT = {
     cta: "Agendar Consulta",
     imagePlaceholder: "Imagem Placeholder",
   },
+  services: {
+    sectionTitle: "Nossos Serviços",
+    sectionSubtitle: "Cuidado completo para a saúde e bem-estar do seu melhor amigo.",
+    items: [
+      {
+        title: "Consultas",
+        description: "Avaliação clínica completa para garantir a saúde preventiva e o bem-estar do seu pet em todas as fases da vida.",
+      },
+      {
+        title: "Vacinas",
+        description: "Imunização segura e atualizada para proteger contra as principais doenças virais e bacterianas.",
+      },
+      {
+        title: "Exames e Imagem",
+        description: "Diagnósticos rápidos e precisos com exames de sangue, raio-x e ultrassom de alta qualidade.",
+      },
+      {
+        title: "Cirurgias e Internação",
+        description: "Centro cirúrgico equipado e UTI moderna com monitoramento contínuo para a recuperação do seu animal.",
+      }
+    ]
+  },
   footer: {
     sections: {
       social: "Redes Sociais",

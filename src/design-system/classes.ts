@@ -28,10 +28,15 @@ export const SECTION = {
   },
   
   services: {
-    wrapper: "py-24 bg-white",
-    h2: "font-heading text-3xl md:text-4xl font-bold text-green-dark text-center mb-12",
-    p: "text-slate-600 text-center max-w-2xl mx-auto mb-16",
-    card: "bg-slate-50 rounded-2xl p-8 hover:shadow-lg transition-shadow border border-slate-100",
+    wrapper: "py-20 bg-slate-50",
+    headerContainer: "text-center max-w-2xl mx-auto mb-16 px-6",
+    h2: "font-heading text-3xl md:text-4xl font-bold text-green-dark mb-4",
+    p: "text-slate-600 text-lg",
+    stack: "flex flex-col gap-16 md:gap-24 mt-16 max-w-5xl mx-auto px-6",
+    cardWrapper: "flex flex-col md:flex-row gap-8 items-center",
+    cardWrapperReverse: "flex flex-col md:flex-row-reverse gap-8 items-center",
+    cardContent: "flex-1 space-y-4",
+    cardImagePlaceholder: "flex-1 w-full aspect-square bg-green-light/20 rounded-2xl border-2 border-dashed border-green-light/50 flex items-center justify-center text-green-dark/50 font-medium",
   },
   
   about: {
