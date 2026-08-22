@@ -63,6 +63,7 @@ export function Location() {
           </div>
           <div className={`${SECTION.location.bentoItem} col-span-1 aspect-square overflow-hidden flex items-center justify-center`}>
             <iframe
+              title="Mapa de Localização da Clínica"
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d483.48180580202455!2d-41.666202845863346!3d-14.203299639507437!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7444be163bea573%3A0xb1b466cb15fe29e9!2sAnimal%20%26%20Cia%20-%20Centro%20Veterin%C3%A1rio!5e0!3m2!1sen!2sbr!4v1787424437060!5m2!1sen!2sbr"
               className="w-full h-full"
               style={{ border: 0 }}

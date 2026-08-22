@@ -59,13 +59,17 @@ export function Header() {
         <button
           className={`${SECTION.header.mobileMenuBtn} md:hidden`}
           onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-          aria-label="Toggle menu"
+          aria-label="Abrir menu"
+          aria-controls="mobile-menu"
+          aria-expanded={isMobileMenuOpen}
         >
           <svg
             className="w-6 h-6"
             fill="none"
             stroke="currentColor"
             viewBox="0 0 24 24"
+            aria-hidden="true"
+            focusable="false"
           >
             {isMobileMenuOpen ? (
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
@@ -78,7 +82,7 @@ export function Header() {
 
       {/* Mobile Menu Drawer */}
       {isMobileMenuOpen && (
-        <div className={`${SECTION.header.navMobileDrawer} md:hidden absolute top-full left-0 right-0`}>
+        <div id="mobile-menu" className={`${SECTION.header.navMobileDrawer} md:hidden absolute top-full left-0 right-0`}>
           <nav className="flex flex-col p-6 gap-4">
             {CONTENT.header.navLinks.map((link) => (
               <Link

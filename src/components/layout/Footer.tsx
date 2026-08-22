@@ -23,7 +23,7 @@ export function Footer() {
           <h3 className={`${SECTION.footer.columnHeading} mb-4`}>{CONTENT.footer.sections.social}</h3>
           <ul className={`space-y-3 ${SECTION.footer.textMuted}`}>
             <li>
-              <a href={CLINIC_INFO.social.instagram.link} target="_blank" rel="noopener noreferrer" className={`${SECTION.footer.link} flex items-center gap-2`}>
+              <a href={CLINIC_INFO.social.instagram.link} target="_blank" rel="noopener noreferrer" className={`${SECTION.footer.link} flex items-center gap-2`} aria-label="Siga-nos no Instagram">
                 <svg
                   className="w-5 h-5"
                   viewBox="0 0 24 24"
@@ -32,6 +32,8 @@ export function Footer() {
                   strokeWidth="2"
                   strokeLinecap="round"
                   strokeLinejoin="round"
+                  aria-hidden="true"
+                  focusable="false"
                 >
                   <rect width="20" height="20" x="2" y="2" rx="5" ry="5" />
                   <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
@@ -41,7 +43,7 @@ export function Footer() {
               </a>
             </li>
             <li>
-              <a href={CLINIC_INFO.social.tiktok.link} target="_blank" rel="noopener noreferrer" className={`${SECTION.footer.link} flex items-center gap-2`}>
+              <a href={CLINIC_INFO.social.tiktok.link} target="_blank" rel="noopener noreferrer" className={`${SECTION.footer.link} flex items-center gap-2`} aria-label="Siga-nos no TikTok">
                 {/* Note: Standard TikTok icon is not in all lucide-react versions, using a placeholder SVG or just text */}
                 <svg
                   className="w-5 h-5"
@@ -51,6 +53,8 @@ export function Footer() {
                   strokeWidth="2"
                   strokeLinecap="round"
                   strokeLinejoin="round"
+                  aria-hidden="true"
+                  focusable="false"
                 >
                   <path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5" />
                 </svg>
