@@ -1,6 +1,6 @@
 import type { Config } from 'tailwindcss';
-import { brandColors } from './design-system/colors';
-import { typography } from './design-system/typography';
+import { brandColors } from './src/design-system/colors';
+import { typography } from './src/design-system/typography';
 
 const config: Config = {
   content: [
