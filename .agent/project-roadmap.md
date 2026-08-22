@@ -25,11 +25,11 @@
 
 ## Milestone 3 - Premium Frontpage Assembly (The UI)
 
-- **Step 1:** Build the **Hero Section**: Implement an asymmetrical layout with a strong CTA and Framer Motion staggered entry animations.
-- **Step 2:** Build the **About Us / History Section**: Leverage CSS Grid and sticky-scroll effects to create a narrative, editorial feel.
-- **Step 3:** Build the **Services Section**: Map over strictly-typed data from `/constants` to generate a custom, interactive card grid.
-- **Step 4:** Integrate the **Social Hub**: Embed a lightweight third-party widget (like Elfsight) to display the live Instagram feed.
-- **Step 5:** Build the **Contact & Find Us Section**: Implement the business hours layout, a direct WhatsApp deep-link button, and an embedded interactive Google Map.
+- **Step 1:** Build the **Hero Section**: Implement an asymmetrical layout with a strong CTA and Framer Motion animations. (Completed)
+- **Step 2:** Build the **Services Section**: Map over strictly-typed data to generate a custom, alternating zig-zag layout. (Completed)
+- **Step 3:** Build the **About Us Section**: Implement a scalable team array focusing on a warm founder profile design. (Completed)
+- **Step 4:** Build the **Location Section**: Implement a bento-box layout with business hours, a direct routing CTA, and an embedded Google Map. (Completed)
+- **Step 5:** Verify the **Footer & Contact**: Ensure the pre-built footer integrates properly with the new design system classes. (Completed)
 
 ## Milestone 4 - Polish, CI/CD & Deployment
 
