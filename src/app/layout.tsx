@@ -1,17 +1,19 @@
 import type { Metadata } from "next";
-import { Inter, Nunito } from "next/font/google";
+import { Barlow, Montserrat } from "next/font/google";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import "./globals.css";
 
-const inter = Inter({
-  variable: "--font-inter",
+const barlow = Barlow({
+  variable: "--font-barlow",
   subsets: ["latin"],
+  weight: ["400", "500", "600", "700", "800", "900"],
 });
 
-const nunito = Nunito({
-  variable: "--font-nunito",
+const montserrat = Montserrat({
+  variable: "--font-montserrat",
   subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
 });
 
 export const metadata: Metadata = {
@@ -33,7 +35,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html
       lang="pt-BR"
-      className={`${inter.variable} ${nunito.variable} h-full antialiased scroll-smooth`}
+      className={`${barlow.variable} ${montserrat.variable} h-full antialiased scroll-smooth`}
       data-scroll-behavior="smooth"
     >
       <body className="min-h-full flex flex-col font-sans text-slate-900">

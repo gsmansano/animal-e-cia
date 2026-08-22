@@ -10,8 +10,8 @@
 - **Accents (Light Green):** `#8CC63F`
 
 ## Typography
-- **Headings:** Nunito
-- **Body:** Inter
+- **Headings:** Barlow
+- **Body:** Montserrat
 
 ---
 
