@@ -27,7 +27,13 @@ export function Header() {
       <div className="max-w-7xl mx-auto px-6 flex items-center justify-between">
         {/* Logo */}
         <Link href="/" className={SECTION.header.logo}>
-          {CLINIC_INFO.name}
+          <img 
+            src="/images/logo.webp" 
+            alt={CLINIC_INFO.name} 
+            className="h-10 w-auto" 
+            loading="eager" 
+            fetchPriority="high" 
+          />
         </Link>
 
         {/* Desktop Nav */}

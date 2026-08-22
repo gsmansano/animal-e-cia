@@ -38,8 +38,14 @@ export function Services() {
             viewport={{ once: true, margin: "-50px" }}
             transition={{ duration: 0.5 }}
           >
-            <div className={`${SECTION.services.cardImagePlaceholder} flex-1 w-full aspect-square flex items-center justify-center`}>
-              Imagem
+            <div className="flex-1 w-full aspect-square flex items-center justify-center">
+              <img 
+                src={`/images/service-${index + 1}.webp`} 
+                alt={item.title} 
+                className={`${SECTION.services.cardImagePlaceholder} w-full h-full object-cover`} 
+                loading="lazy" 
+                decoding="async" 
+              />
             </div>
             <div className="flex-1 space-y-4">
               <h3 className="font-heading text-2xl font-bold text-green-dark">{item.title}</h3>

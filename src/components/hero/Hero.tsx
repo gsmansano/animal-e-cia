@@ -54,9 +54,15 @@ export function Hero() {
           initial={{ opacity: 0, scale: 0.95 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.8, delay: 0.3, ease: "easeOut" }}
-          className={`${SECTION.hero.imagePlaceholder} w-full aspect-[4/3] lg:aspect-square flex items-center justify-center`}
+          className="w-full aspect-[4/3] lg:aspect-square flex items-center justify-center"
         >
-          <span>{CONTENT.hero.imagePlaceholder}</span>
+          <img 
+            src="/images/hero.webp" 
+            alt="Centro Veterinário Animal & Cia" 
+            className={`${SECTION.hero.imagePlaceholder} w-full h-full object-cover`} 
+            loading="eager" 
+            fetchPriority="high" 
+          />
         </motion.div>
       </div>
     </section>

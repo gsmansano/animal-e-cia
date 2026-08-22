@@ -57,9 +57,23 @@ export function Location() {
           viewport={{ once: true, margin: "-100px" }}
           transition={{ duration: 0.6, delay: 0.2 }}
         >
-          <div className={`${SECTION.location.bentoItem} col-span-2 aspect-video overflow-hidden flex items-center justify-center`}>Foto da Fachada</div>
-          <div className={`${SECTION.location.bentoItem} col-span-1 aspect-square overflow-hidden flex items-center justify-center`}>
-            Foto da Recepção
+          <div className="col-span-2 aspect-video overflow-hidden flex items-center justify-center">
+            <img 
+              src="/images/fachada.webp" 
+              alt="Fachada da clínica" 
+              className={`${SECTION.location.bentoItem} w-full h-full object-cover`} 
+              loading="lazy" 
+              decoding="async" 
+            />
+          </div>
+          <div className="col-span-1 aspect-square overflow-hidden flex items-center justify-center">
+            <img 
+              src="/images/recepcao.webp" 
+              alt="Recepção da clínica" 
+              className={`${SECTION.location.bentoItem} w-full h-full object-cover`} 
+              loading="lazy" 
+              decoding="async" 
+            />
           </div>
           <div className={`${SECTION.location.bentoItem} col-span-1 aspect-square overflow-hidden flex items-center justify-center`}>
             <iframe

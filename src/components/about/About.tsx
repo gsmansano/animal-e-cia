@@ -30,7 +30,13 @@ export function About() {
               transition={{ duration: 0.6 }}
             >
               <div className={`${SECTION.about.imageOffsetBackground} absolute inset-0 transform translate-x-4 translate-y-4`} />
-              <div className={`${SECTION.about.image} w-full aspect-[4/5] flex items-center justify-center object-cover relative z-10`}>Foto de {member.name}</div>
+              <img 
+                src={`/images/team-${index + 1}.webp`} 
+                alt={member.name} 
+                className={`${SECTION.about.image} w-full aspect-[4/5] object-cover relative z-10`} 
+                loading="lazy" 
+                decoding="async" 
+              />
             </motion.div>
             
             <motion.div 
