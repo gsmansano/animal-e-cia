@@ -36,6 +36,20 @@ export const CONTENT = {
       }
     ]
   },
+  about: {
+    sectionTitle: "Quem Cuida do Seu Pet",
+    team: [
+      {
+        name: "Dra. Nome da Médica",
+        role: "Médica Veterinária e Fundadora",
+        bio: [
+          "Com anos de dedicação à medicina veterinária, a fundadora da Animal & Cia construiu sua carreira com base no amor e respeito aos animais.",
+          "Especializada em clínica médica e cirúrgica de pequenos animais, ela lidera uma equipe apaixonada por oferecer o melhor cuidado possível para o seu pet.",
+          "Acreditamos que cada animal é único e merece um atendimento humanizado, com infraestrutura de ponta e muito carinho."
+        ]
+      }
+    ]
+  },
   footer: {
     sections: {
       social: "Redes Sociais",

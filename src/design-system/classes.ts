@@ -40,9 +40,17 @@ export const SECTION = {
   },
   
   about: {
-    wrapper: "py-24 bg-slate-50",
-    h2: "font-heading text-3xl md:text-4xl font-bold text-green-dark mb-8",
-    p: "text-slate-600 mb-6 leading-relaxed",
+    wrapper: "py-20 bg-white",
+    headerContainer: "text-center max-w-2xl mx-auto mb-16 px-6",
+    h2: "font-heading text-3xl md:text-4xl font-bold text-green-dark mb-4",
+    profileContainer: "max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-16",
+    imageWrapper: "relative",
+    imageOffsetBackground: "absolute inset-0 bg-green-light/20 rounded-2xl transform translate-x-4 translate-y-4",
+    image: "w-full aspect-[4/5] bg-slate-100 flex items-center justify-center rounded-2xl object-cover shadow-lg relative z-10 text-slate-400 font-medium",
+    textContent: "space-y-6",
+    name: "font-heading text-3xl font-bold text-green-dark",
+    role: "text-pink font-semibold text-lg",
+    bioText: "text-slate-600 leading-relaxed",
   },
   
   location: {
