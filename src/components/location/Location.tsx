@@ -8,10 +8,10 @@ import { SECTION, GLOBAL } from "@/design-system/classes";
 export function Location() {
   return (
     <section id="localizacao" className={SECTION.location.wrapper}>
-      <div className={SECTION.location.grid}>
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 max-w-7xl mx-auto px-6 items-start">
         {/* Left Column: Text & CTA */}
         <motion.div
-          className={SECTION.location.infoWrapper}
+          className="flex flex-col space-y-6 sticky top-24"
           initial={{ opacity: 0, x: -30 }}
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true, margin: "-100px" }}
@@ -51,17 +51,17 @@ export function Location() {
 
         {/* Right Column: Bento Box */}
         <motion.div
-          className={SECTION.location.bentoGrid}
+          className="grid grid-cols-2 gap-4"
           initial={{ opacity: 0, x: 30 }}
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true, margin: "-100px" }}
           transition={{ duration: 0.6, delay: 0.2 }}
         >
-          <div className={SECTION.location.bentoItemWide}>Foto da Fachada</div>
-          <div className={SECTION.location.bentoItemSquare}>
+          <div className={`${SECTION.location.bentoItem} col-span-2 aspect-video overflow-hidden flex items-center justify-center`}>Foto da Fachada</div>
+          <div className={`${SECTION.location.bentoItem} col-span-1 aspect-square overflow-hidden flex items-center justify-center`}>
             Foto da Recepção
           </div>
-          <div className={SECTION.location.bentoItemSquare}>
+          <div className={`${SECTION.location.bentoItem} col-span-1 aspect-square overflow-hidden flex items-center justify-center`}>
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d483.48180580202455!2d-41.666202845863346!3d-14.203299639507437!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7444be163bea573%3A0xb1b466cb15fe29e9!2sAnimal%20%26%20Cia%20-%20Centro%20Veterin%C3%A1rio!5e0!3m2!1sen!2sbr!4v1787424437060!5m2!1sen!2sbr"
               className="w-full h-full"

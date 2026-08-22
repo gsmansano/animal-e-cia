@@ -20,18 +20,18 @@ export function Header() {
 
   return (
     <header
-      className={`${SECTION.header.wrapper.base} ${
+      className={`${SECTION.header.wrapper.base} fixed top-0 left-0 right-0 z-50 ${
         isScrolled ? SECTION.header.wrapper.scrolled : SECTION.header.wrapper.transparent
       }`}
     >
-      <div className={SECTION.header.innerContainer}>
+      <div className="max-w-7xl mx-auto px-6 flex items-center justify-between">
         {/* Logo */}
         <Link href="/" className={SECTION.header.logo}>
           {CLINIC_INFO.name}
         </Link>
 
         {/* Desktop Nav */}
-        <nav className={SECTION.header.navDesktop}>
+        <nav className="hidden md:flex items-center gap-8">
           {CONTENT.header.navLinks.map((link) => (
             <Link
               key={link.href}
@@ -57,7 +57,7 @@ export function Header() {
 
         {/* Mobile Menu Toggle */}
         <button
-          className={SECTION.header.mobileMenuBtn}
+          className={`${SECTION.header.mobileMenuBtn} md:hidden`}
           onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
           aria-label="Toggle menu"
         >
@@ -78,8 +78,8 @@ export function Header() {
 
       {/* Mobile Menu Drawer */}
       {isMobileMenuOpen && (
-        <div className={SECTION.header.navMobileDrawer}>
-          <nav className={SECTION.header.navMobileContainer}>
+        <div className={`${SECTION.header.navMobileDrawer} md:hidden absolute top-full left-0 right-0`}>
+          <nav className="flex flex-col p-6 gap-4">
             {CONTENT.header.navLinks.map((link) => (
               <Link
                 key={link.href}

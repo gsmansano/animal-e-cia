@@ -22,8 +22,8 @@ export function Hero() {
   };
 
   return (
-    <section className={SECTION.hero.wrapper}>
-      <div className={SECTION.hero.grid}>
+    <section className={`${SECTION.hero.wrapper} relative overflow-hidden`}>
+      <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
         {/* Left Side Content */}
         <motion.div
           variants={containerVariants}
@@ -31,10 +31,10 @@ export function Hero() {
           animate="visible"
           className="flex flex-col items-start"
         >
-          <motion.h1 variants={itemVariants} className={SECTION.hero.h1}>
+          <motion.h1 variants={itemVariants} className={`${SECTION.hero.h1} mb-6`}>
             {CONTENT.hero.title}
           </motion.h1>
-          <motion.p variants={itemVariants} className={SECTION.hero.p}>
+          <motion.p variants={itemVariants} className={`${SECTION.hero.p} mb-8 max-w-lg`}>
             {CONTENT.hero.subtitle}
           </motion.p>
           <motion.div variants={itemVariants}>
@@ -54,9 +54,9 @@ export function Hero() {
           initial={{ opacity: 0, scale: 0.95 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.8, delay: 0.3, ease: "easeOut" }}
-          className={SECTION.hero.imagePlaceholder}
+          className={`${SECTION.hero.imagePlaceholder} w-full aspect-[4/3] lg:aspect-square flex items-center justify-center`}
         >
-          <span className="text-green-dark/50 font-medium font-heading">{CONTENT.hero.imagePlaceholder}</span>
+          <span>{CONTENT.hero.imagePlaceholder}</span>
         </motion.div>
       </div>
     </section>
