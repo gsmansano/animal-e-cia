@@ -31,6 +31,14 @@
 - **Step 4:** Build the **Location Section**: Implement a bento-box layout with business hours, a direct routing CTA, and an embedded Google Map. (Completed)
 - **Step 5:** Verify the **Footer & Contact**: Ensure the pre-built footer integrates properly with the new design system classes. (Completed)
 
+## Milestone 3.5 - Architecture Refactor & Audit Remediation
+
+- **Step 1:** Documentation Sync (Updating rules/constraints). (Completed)
+- **Step 2:** Enforce Type Contracts (Strict TS interfaces for constants).
+- **Step 3:** De-abstract Structural Tailwind (Move layout classes back to JSX).
+- **Step 4:** Accessibility (a11y) Patch (ARIA attributes for interactive UI).
+- **Step 5:** Static Image Prep (Prepare img tags for `output: 'export'`).
+
 ## Milestone 4 - Polish, CI/CD & Deployment
 
 - **Step 1:** Conduct an asset audit: Manually process and optimize all image assets into modern formats (WebP/AVIF) before adding them to `/public`, and ensure off-screen elements are lazy-loaded.
