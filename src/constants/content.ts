@@ -1,4 +1,6 @@
-export const CONTENT = {
+import { ContentDictionary } from '@/types';
+
+export const CONTENT: ContentDictionary = {
   header: {
     navLinks: [
       { label: 'Serviços', href: '#servicos' },
@@ -66,4 +68,4 @@ export const CONTENT = {
     },
     copyright: "Todos os direitos reservados.",
   }
-} as const;
+};

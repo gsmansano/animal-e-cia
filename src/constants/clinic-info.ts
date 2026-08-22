@@ -1,34 +1,4 @@
-export interface ClinicInfo {
-  name: string;
-  whatsapp: {
-    number: string;
-    display: string;
-    link: string;
-  };
-  address: {
-    street: string;
-    neighborhood: string;
-    city: string;
-    state: string;
-    cep: string;
-    full: string;
-    googleMapsRouteLink: string;
-  };
-  social: {
-    instagram: {
-      handle: string;
-      link: string;
-    };
-    tiktok: {
-      handle: string;
-      link: string;
-    };
-  };
-  hours: {
-    weekdays: string;
-    saturday: string;
-  };
-}
+import { ClinicInfo } from '@/types';
 
 export const CLINIC_INFO: ClinicInfo = {
   name: "Animal & Cia",
