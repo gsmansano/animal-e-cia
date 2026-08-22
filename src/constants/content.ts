@@ -22,19 +22,35 @@ export const CONTENT: ContentDictionary = {
     items: [
       {
         title: "Consultas",
-        description: "Avaliação clínica completa para garantir a saúde preventiva e o bem-estar do seu pet em todas as fases da vida.",
+        description: "Atendimento clínico geral com foco no carinho, prevenção e diagnóstico preciso para todas as fases da vida do seu pet."
       },
       {
         title: "Vacinas",
-        description: "Imunização segura e atualizada para proteger contra as principais doenças virais e bacterianas.",
+        description: "Imunização completa e segura com vacinas importadas de alta qualidade para proteger contra as principais doenças."
       },
       {
-        title: "Exames e Imagem",
-        description: "Diagnósticos rápidos e precisos com exames de sangue, raio-x e ultrassom de alta qualidade.",
+        title: "Cirurgias",
+        description: "Centro cirúrgico totalmente equipado para procedimentos gerais e de alta complexidade com total segurança."
       },
       {
-        title: "Cirurgias e Internação",
-        description: "Centro cirúrgico equipado e UTI moderna com monitoramento contínuo para a recuperação do seu animal.",
+        title: "Raio-X",
+        description: "Diagnóstico por imagem digital rápido e de alta precisão realizado diretamente na estrutura da clínica."
+      },
+      {
+        title: "Ultrassonografia",
+        description: "Exames de imagem avançados para avaliações detalhadas de órgãos e tecidos internos."
+      },
+      {
+        title: "ECG",
+        description: "Avaliação cardiológica completa e segura, essencial para check-ups e liberação cirúrgica."
+      },
+      {
+        title: "Exames de Sangue",
+        description: "Laboratório próprio para resultados rápidos de hemogramas e análises bioquímicas."
+      },
+      {
+        title: "Internamento",
+        description: "Estrutura monitorada e confortável para a recuperação do seu animal sob cuidados veterinários contínuos."
       }
     ]
   },
