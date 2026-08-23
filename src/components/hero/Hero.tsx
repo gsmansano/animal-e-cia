@@ -1,6 +1,7 @@
 'use client';
 
 import { motion, Variants } from 'framer-motion';
+import { MessageCircle } from 'lucide-react';
 import { CLINIC_INFO } from '@/constants/clinic-info';
 import { CONTENT } from '@/constants/content';
 import { GLOBAL, SECTION } from '@/design-system/classes';
@@ -42,9 +43,10 @@ export function Hero() {
               href={CLINIC_INFO.whatsapp.link}
               target="_blank"
               rel="noopener noreferrer"
-              className={GLOBAL.primaryButton}
+              className={`${GLOBAL.primaryButton} !inline-flex flex-row items-center justify-center gap-2 whitespace-nowrap`}
             >
-              {CONTENT.hero.cta}
+              <MessageCircle className="w-5 h-5" />
+              <span>Fale com a gente!</span>
             </a>
           </motion.div>
         </motion.div>

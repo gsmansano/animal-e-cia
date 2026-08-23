@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import { MessageCircle } from 'lucide-react';
 import { CONTENT } from "@/constants/content";
 import { CLINIC_INFO } from "@/constants/clinic-info";
 import { SECTION, GLOBAL } from "@/design-system/classes";
@@ -39,12 +40,13 @@ export function Location() {
 
           <div className="pt-4">
             <a
-              href={CLINIC_INFO.address.googleMapsRouteLink}
+              href={CLINIC_INFO.whatsapp.link}
               target="_blank"
               rel="noopener noreferrer"
-              className={GLOBAL.primaryButton}
+              className={`${GLOBAL.primaryButton} !inline-flex flex-row items-center justify-center gap-2 whitespace-nowrap`}
             >
-              Como Chegar
+              <MessageCircle className="w-5 h-5" />
+              <span>Fale com a gente!</span>
             </a>
           </div>
         </motion.div>
