@@ -1,36 +1,38 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import Link from 'next/link';
+import { MessageCircle } from 'lucide-react';
 import { CLINIC_INFO } from '@/constants/clinic-info';
 import { CONTENT } from '@/constants/content';
 import { GLOBAL, SECTION } from '@/design-system/classes';
 
 export function Header() {
-  const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
-  useEffect(() => {
-    const handleScroll = () => {
-      setIsScrolled(window.scrollY > 20);
-    };
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
-
   return (
-    <header
-      className={`${SECTION.header.wrapper.base} fixed top-0 left-0 right-0 z-50 ${
-        isScrolled ? SECTION.header.wrapper.scrolled : SECTION.header.wrapper.transparent
-      }`}
-    >
+    <header className="bg-white shadow-sm py-4 fixed top-0 left-0 right-0 z-50 transition-all duration-300">
       <div className="max-w-7xl mx-auto px-6 flex items-center justify-between">
-        {/* Logo */}
+        
+        {/* Responsive Logos */}
         <Link href="/" className={SECTION.header.logo}>
+          {/* Desktop Logo */}
           <img 
-            src="/images/logo.webp" 
-            alt={CLINIC_INFO.name} 
-            className="h-10 w-auto" 
+            src="/images/logo-desktop.webp" 
+            alt="Animal & Cia Logo" 
+            className="hidden md:block w-auto h-20" 
+            width="2513"
+            height="754"
+            loading="eager" 
+            fetchPriority="high" 
+          />
+          {/* Mobile Logo */}
+          <img 
+            src="/images/logo-mobile.webp" 
+            alt="Animal & Cia Logo Mobile" 
+            className="block md:hidden w-auto h-16" 
+            width="1308"
+            height="956"
             loading="eager" 
             fetchPriority="high" 
           />
@@ -49,41 +51,42 @@ export function Header() {
           ))}
         </nav>
 
-        {/* CTA Button */}
-        <div className="hidden md:block">
+        <div className="flex items-center gap-2 md:gap-4">
+          {/* CTA Button - Global */}
           <a
             href={CLINIC_INFO.whatsapp.link}
             target="_blank"
             rel="noopener noreferrer"
-            className={GLOBAL.primaryButton}
+            className={`${GLOBAL.primaryButton} !inline-flex flex-row items-center justify-center gap-2 whitespace-nowrap`}
           >
-            {CONTENT.header.cta}
+            <MessageCircle className="w-5 h-5" />
+            <span className="hidden md:inline">Fale com a gente!</span>
           </a>
-        </div>
 
-        {/* Mobile Menu Toggle */}
-        <button
-          className={`${SECTION.header.mobileMenuBtn} md:hidden`}
-          onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-          aria-label="Abrir menu"
-          aria-controls="mobile-menu"
-          aria-expanded={isMobileMenuOpen}
-        >
-          <svg
-            className="w-6 h-6"
-            fill="none"
-            stroke="currentColor"
-            viewBox="0 0 24 24"
-            aria-hidden="true"
-            focusable="false"
+          {/* Mobile Menu Toggle */}
+          <button
+            className={`${SECTION.header.mobileMenuBtn} md:hidden`}
+            onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+            aria-label="Abrir menu"
+            aria-controls="mobile-menu"
+            aria-expanded={isMobileMenuOpen}
           >
-            {isMobileMenuOpen ? (
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
-            ) : (
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
-            )}
-          </svg>
-        </button>
+            <svg
+              className="w-6 h-6"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              aria-hidden="true"
+              focusable="false"
+            >
+              {isMobileMenuOpen ? (
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+              ) : (
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+              )}
+            </svg>
+          </button>
+        </div>
       </div>
 
       {/* Mobile Menu Drawer */}
@@ -95,20 +98,11 @@ export function Header() {
                 key={link.href}
                 href={link.href}
                 onClick={() => setIsMobileMenuOpen(false)}
-                className={`${SECTION.header.navLink} py-2`}
+                className={`${SECTION.header.navLink} py-2 text-center`}
               >
                 {link.label}
               </Link>
             ))}
-            <a
-              href={CLINIC_INFO.whatsapp.link}
-              target="_blank"
-              rel="noopener noreferrer"
-              onClick={() => setIsMobileMenuOpen(false)}
-              className={`${GLOBAL.primaryButton} text-center w-full mt-4`}
-            >
-              {CONTENT.header.cta}
-            </a>
           </nav>
         </div>
       )}

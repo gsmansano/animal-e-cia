@@ -19,21 +19,39 @@ const montserrat = Montserrat({
 
 export const metadata: Metadata = {
   title: {
-    default: "Animal & Cia | Centro Veterinário em Brumado",
+    default: "Animal & Cia | Centro Veterinário em Brumado - BA",
     template: "%s | Animal & Cia",
   },
-  description: "Centro Veterinário referência em Brumado, Bahia. Oferecemos consultas, exames de sangue, raio-x, ultrassom, cirurgias e internação para o seu pet.",
-  keywords: ["centro veterinário", "clínica veterinária", "Brumado", "Bahia", "veterinário", "exames veterinários", "raio-x animal", "ultrassom veterinário", "cirurgia veterinária", "internação pet", "farmácia veterinária"],
+  description:
+    "Centro Veterinário referência em Brumado, Bahia. Oferecemos consultas, exames de sangue, raio-x, ultrassom, cirurgias e internação para o seu pet.",
+  keywords: [
+    "centro veterinário",
+    "clínica veterinária",
+    "Brumado",
+    "Bahia",
+    "veterinário",
+    "exames veterinários",
+    "raio-x animal",
+    "ultrassom veterinário",
+    "cirurgia veterinária",
+    "internação pet",
+    "farmácia veterinária",
+  ],
   openGraph: {
     title: "Animal & Cia | Centro Veterinário em Brumado",
-    description: "Centro Veterinário referência em Brumado, Bahia. Oferecemos consultas, exames laboratoriais, imagem, cirurgias e internação.",
+    description:
+      "Centro Veterinário referência em Brumado, Bahia. Oferecemos consultas, exames laboratoriais, imagem, cirurgias e internação.",
     locale: "pt_BR",
     type: "website",
   },
 };
 
 // @ts-ignore
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
   return (
     <html
       lang="pt-BR"
