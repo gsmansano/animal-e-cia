@@ -39,11 +39,22 @@
 - **Step 4:** Accessibility (a11y) Patch (ARIA attributes for interactive UI).
 - **Step 5:** Static Image Prep (Prepare img tags for `output: 'export'`).
 
-## Milestone 4 - Polish, Local SEO, CI/CD & Deployment
+## Milestone 4 - Infrastructure Core & Local SEO
 
-- **Step 1: Asset Integration:** Map and place the final `.webp` images into `/public/images/` and add the site favicon.
-- **Step 2: Local SEO (JSON-LD) Injection:** Implement structured data schema for the local business to supercharge Google Maps ranking.
-- **Step 3: Static Export Configuration:** Configure `next.config.ts` for a purely static HTML build (`output: 'export'`).
-- **Step 4: Lighthouse Audit & Polish:** Verify 100/100 scores across Performance, Accessibility, Best Practices, and SEO.
-- **Step 5: Automated Testing & CI/CD:** Implement a lightweight Playwright E2E test and set up GitHub Actions for automated type-checking and testing.
-- **Step 6: Production Deployment:** Connect the GitHub repository to Cloudflare Pages for live deployment.
+- **Step 1:** Local SEO (JSON-LD) Injection (Completed)
+- **Step 2:** Static Export Configuration (Completed)
+- **Step 3:** Dead Code & Project Audit (Completed)
+
+## Milestone 5 - Brand Identity & UI Polish
+
+- **Step 1:** Header Overhaul (Implement `Animal e Cia Logo Horizontal sem centro.png` for desktop and `Animal e Cia Logo Coração.png` for mobile).
+- **Step 2:** Global CTA Standardization (Update all primary buttons to "Fale com a gente!" paired with a WhatsApp icon).
+- **Step 3:** Color System Enforcement (Apply the "White Buffer Rule": Green backgrounds must have White text/icons. White backgrounds can have Green/Pink text. Pink and Green must never touch without a white buffer. Remove pink text from the footer).
+- **Step 4:** Contact Section & Mini-Footer Redesign (Create a dedicated Contact section with a desktop-only QR code, and shrink the footer to just feature `Animal e Cia Logo Branco Grosso (1).png`, copyright, and socials).
+- **Step 5:** Final Asset Integration & Lighthouse Polish (Inject final WebP photos once approved and run final 100/100 Lighthouse audit).
+
+## Milestone 6 - CI/CD & Production Deployment
+
+- **Step 1:** Automated Testing (Playwright E2E test).
+- **Step 2:** Continuous Integration (GitHub Actions for automated type-checking).
+- **Step 3:** Production Deployment (Connect repository to Cloudflare Pages).
