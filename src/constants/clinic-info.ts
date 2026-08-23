@@ -3,7 +3,7 @@ import { ClinicInfo } from '@/types';
 export const CLINIC_INFO: ClinicInfo = {
   name: "Animal & Cia",
   whatsapp: {
-    number: "5577998680996",
+    number: "+5577998680996",
     display: "77 9 9868-0996",
     link: "https://wa.me/5577998680996",
   },
@@ -16,8 +16,8 @@ export const CLINIC_INFO: ClinicInfo = {
     full: "R. Euclides da Cunha 92, Centro, Brumado, Bahia. CEP: 46100-149",
     googleMapsRouteLink: "https://maps.google.com/?daddr=R.+Euclides+da+Cunha+92,+Centro,+Brumado,+Bahia",
     coordinates: {
-      latitude: "-14.203029493955436",
-      longitude: "-41.6659444110436",
+      latitude: -14.203029493955436,
+      longitude: -41.6659444110436,
     },
   },
   social: {

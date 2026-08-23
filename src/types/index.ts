@@ -14,8 +14,8 @@ export interface ClinicInfo {
     full: string;
     googleMapsRouteLink: string;
     coordinates: {
-      latitude: string;
-      longitude: string;
+      latitude: number;
+      longitude: number;
     };
   };
   social: {
