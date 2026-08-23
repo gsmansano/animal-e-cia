@@ -12,7 +12,7 @@ export function Location() {
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 max-w-7xl mx-auto px-6 items-start">
         {/* Left Column: Text & CTA */}
         <motion.div
-          className="flex flex-col space-y-6 sticky top-24"
+          className="flex flex-col space-y-6 lg:sticky lg:top-24"
           initial={{ opacity: 0, x: -30 }}
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true, margin: "-100px" }}
