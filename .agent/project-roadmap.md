@@ -41,9 +41,9 @@
 
 ## Milestone 4 - Infrastructure Core & Local SEO
 
-- **Step 1:** Local SEO (JSON-LD) Injection (Completed)
-- **Step 2:** Static Export Configuration (Completed)
-- **Step 3:** Dead Code & Project Audit (Completed)
+- **Step 1:** Local SEO (JSON-LD) Injection
+- **Step 2:** Static Export Configuration
+- **Step 3:** Dead Code & Project Audit
 
 ## Milestone 5 - Brand Identity & UI Polish
 
