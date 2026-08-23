@@ -13,6 +13,10 @@ export interface ClinicInfo {
     cep: string;
     full: string;
     googleMapsRouteLink: string;
+    coordinates: {
+      latitude: string;
+      longitude: string;
+    };
   };
   social: {
     instagram: {

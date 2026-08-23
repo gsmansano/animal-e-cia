@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Barlow, Montserrat } from "next/font/google";
+import { LocalBusinessSchema } from "@/components/seo/LocalBusinessSchema";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import "./globals.css";
@@ -31,7 +32,8 @@ export const metadata: Metadata = {
   },
 };
 
-export default function RootLayout({ children }: LayoutProps<"/">) {
+// @ts-ignore
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html
       lang="pt-BR"
@@ -39,6 +41,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       data-scroll-behavior="smooth"
     >
       <body className="min-h-full flex flex-col font-sans text-slate-900">
+        <LocalBusinessSchema />
         <Header />
         {children}
         <Footer />

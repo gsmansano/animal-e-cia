@@ -15,6 +15,10 @@ export const CLINIC_INFO: ClinicInfo = {
     cep: "46100-149",
     full: "R. Euclides da Cunha 92, Centro, Brumado, Bahia. CEP: 46100-149",
     googleMapsRouteLink: "https://maps.google.com/?daddr=R.+Euclides+da+Cunha+92,+Centro,+Brumado,+Bahia",
+    coordinates: {
+      latitude: "-14.203029493955436",
+      longitude: "-41.6659444110436",
+    },
   },
   social: {
     instagram: {
