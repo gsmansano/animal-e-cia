@@ -54,12 +54,8 @@ export const SECTION = {
   },
 
   footer: {
-    wrapper: "bg-green-dark text-white pt-16 pb-8",
-    columnHeading: "font-heading text-xl font-bold text-pink",
-    textMuted: "text-slate-300",
-    link: "text-slate-300 hover:text-green-light transition-colors",
-    qrBox: "bg-white/10 p-4 rounded-xl text-center border border-white/20",
-    qrInner: "bg-white/20 rounded-lg border-2 border-dashed border-white/40",
-    copyright: "border-t border-white/20 text-center text-sm text-slate-400",
+    wrapper: "bg-white border-t border-slate-100 py-6",
+    link: "text-slate-600 hover:text-green-dark transition-colors",
+    copyright: "text-center text-sm text-slate-600",
   },
 } as const;
