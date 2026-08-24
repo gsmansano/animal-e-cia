@@ -55,7 +55,7 @@ export default function RootLayout({
   return (
     <html
       lang="pt-BR"
-      className={`${barlow.variable} ${montserrat.variable} h-full antialiased scroll-smooth`}
+      className={`${barlow.variable} ${montserrat.variable} h-full antialiased scroll-smooth scroll-pt-20 md:scroll-pt-28`}
       data-scroll-behavior="smooth"
     >
       <body className="min-h-full flex flex-col font-sans text-slate-900 bg-slate-50">
