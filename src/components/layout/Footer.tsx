@@ -69,7 +69,7 @@ export function Footer() {
           <h3 className={`${SECTION.footer.columnHeading} mb-4`}>{CONTENT.footer.sections.contact}</h3>
           <div className={`${SECTION.footer.qrBox} inline-block`}>
             <img 
-              src="/images/qr-code.webp" 
+              src="/images/qrcode.png" 
               alt="WhatsApp QR Code" 
               className={`${SECTION.footer.qrInner} w-32 h-32 mb-3 mx-auto object-cover`} 
               loading="lazy" 

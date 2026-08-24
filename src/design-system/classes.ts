@@ -24,14 +24,14 @@ export const SECTION = {
   },
   
   services: {
-    wrapper: "py-20 bg-slate-50",
+    wrapper: "py-20 bg-white",
     h2: "font-heading text-3xl md:text-4xl font-bold text-green-dark",
     p: "text-slate-600 text-lg",
     cardImagePlaceholder: "bg-green-light/20 rounded-2xl border-2 border-dashed border-green-light/50 text-green-dark/50 font-medium",
   },
   
   about: {
-    wrapper: "py-20 bg-white",
+    wrapper: "py-20 bg-slate-50",
     h2: "font-heading text-3xl md:text-4xl font-bold text-green-dark",
     imageOffsetBackground: "bg-green-light/20 rounded-2xl",
     image: "bg-slate-100 rounded-2xl shadow-lg text-slate-400 font-medium",
@@ -41,7 +41,7 @@ export const SECTION = {
   },
   
   location: {
-    wrapper: "py-20 bg-slate-50",
+    wrapper: "py-20 bg-white",
     h2: "font-heading text-3xl md:text-4xl font-bold text-green-dark",
     p: "text-slate-600 text-lg",
     bentoItem: "bg-slate-200 rounded-2xl shadow-sm text-slate-500 font-medium",

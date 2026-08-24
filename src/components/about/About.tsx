@@ -31,7 +31,7 @@ export function About() {
             >
               <div className={`${SECTION.about.imageOffsetBackground} absolute inset-0 transform translate-x-4 translate-y-4`} />
               <img 
-                src={`/images/team-${index + 1}.webp`} 
+                src="/images/about-1.webp" 
                 alt={member.name} 
                 className={`${SECTION.about.image} w-full aspect-[4/5] object-cover relative z-10`} 
                 loading="lazy" 

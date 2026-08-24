@@ -59,7 +59,7 @@ export function Hero() {
           className="w-full aspect-[4/3] lg:aspect-square flex items-center justify-center"
         >
           <img 
-            src="/images/hero.webp" 
+            src="/images/hero-1.webp" 
             alt="Centro Veterinário Animal & Cia" 
             className={`${SECTION.hero.imagePlaceholder} w-full h-full object-cover`} 
             loading="eager" 

@@ -61,7 +61,7 @@ export function Location() {
         >
           <div className="col-span-2 aspect-video overflow-hidden flex items-center justify-center">
             <img 
-              src="/images/fachada.webp" 
+              src="/images/location-1.webp" 
               alt="Fachada da clínica" 
               className={`${SECTION.location.bentoItem} w-full h-full object-cover`} 
               loading="lazy" 
@@ -70,7 +70,7 @@ export function Location() {
           </div>
           <div className="col-span-1 aspect-square overflow-hidden flex items-center justify-center">
             <img 
-              src="/images/recepcao.webp" 
+              src="/images/location-2.webp" 
               alt="Recepção da clínica" 
               className={`${SECTION.location.bentoItem} w-full h-full object-cover`} 
               loading="lazy" 

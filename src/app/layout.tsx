@@ -58,7 +58,7 @@ export default function RootLayout({
       className={`${barlow.variable} ${montserrat.variable} h-full antialiased scroll-smooth`}
       data-scroll-behavior="smooth"
     >
-      <body className="min-h-full flex flex-col font-sans text-slate-900">
+      <body className="min-h-full flex flex-col font-sans text-slate-900 bg-slate-50">
         <LocalBusinessSchema />
         <Header />
         {children}
