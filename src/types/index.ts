@@ -29,8 +29,12 @@ export interface ClinicInfo {
     };
   };
   hours: {
-    weekdays: string;
-    saturday: string;
+    label: string;
+    time: string;
+  }[];
+  directions: {
+    title: string;
+    text: string;
   };
 }
 

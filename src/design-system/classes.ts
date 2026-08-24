@@ -44,7 +44,7 @@ export const SECTION = {
     wrapper: "py-20 bg-white",
     h2: "font-heading text-3xl md:text-4xl font-bold text-green-dark",
     p: "text-slate-600 text-lg",
-    bentoItem: "bg-slate-200 rounded-2xl shadow-sm text-slate-500 font-medium",
+    bentoItem: "bg-slate-200 rounded-2xl text-slate-500 font-medium",
   },
 
   contact: {
