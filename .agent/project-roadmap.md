@@ -45,13 +45,18 @@
 - **Step 2:** Static Export Configuration
 - **Step 3:** Dead Code & Project Audit
 
-## Milestone 5 - Brand Identity & UI Polish
+## Milestone 5 - Brand Identity, UI Polish & Finalization
 
 - **Step 1:** Header Overhaul (Implement `Animal e Cia Logo Horizontal sem centro.png` for desktop and `Animal e Cia Logo Coração.png` for mobile).
 - **Step 2:** Global CTA Standardization (Update all primary buttons to "Fale com a gente!" paired with a WhatsApp icon).
-- **Step 3:** Color System Enforcement (Apply the "White Buffer Rule": Green backgrounds must have White text/icons. White backgrounds can have Green/Pink text. Pink and Green must never touch without a white buffer. Remove pink text from the footer).
-- **Step 4:** Contact Section & Mini-Footer Redesign (Create a dedicated Contact section with a desktop-only QR code, and shrink the footer to just feature `Animal e Cia Logo Branco Grosso (1).png`, copyright, and socials).
-- **Step 5:** Final Asset Integration & Lighthouse Polish (Inject final WebP photos once approved and run final 100/100 Lighthouse audit).
+- **Step 3:** Color System Enforcement (Apply the "White Buffer Rule," alternate clean off-white backgrounds, and enforce strict data/presentation architecture in constants).
+- **Step 4:** Footer Restructure (Shrink the footer to be lean, simple, and compact, featuring only logo, copyright, and pure SVG socials).
+- **Step 5:** Section-by-Section Polish
+  - _Services:_ Reduce vertical padding to shorten the section and implement a soft border/shadow structure for the images.
+  - _Location:_ Add "Como chegar" instructional text and reorganize the operating hours for a cleaner view.
+  - _Hero:_ Explore a cooler layout, potentially implementing a smooth image carousel.
+- **Step 6:** Final Copywriting (Review and finalize all text content across every section, ensuring it is all centralized in `constants`).
+- **Step 7:** Codebase Cleanup & Lighthouse Polish (Run a final code sweep to remove unused files/trash, verify all final WebP assets, and run the ultimate 100/100 Lighthouse performance audit).
 
 ## Milestone 6 - CI/CD & Production Deployment
 
