@@ -28,31 +28,37 @@ export function Services() {
         </motion.p>
       </div>
 
-      <div className="flex flex-col gap-16 md:gap-24 mt-16 max-w-5xl mx-auto px-6">
-        {CONTENT.services.items.map((item, index) => (
-          <motion.div
-            key={item.title}
-            className={`flex flex-col gap-8 items-center ${index % 2 !== 0 ? 'md:flex-row-reverse' : 'md:flex-row'}`}
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, margin: "-50px" }}
-            transition={{ duration: 0.5 }}
-          >
-            <div className="flex-1 w-full flex items-center justify-center">
-              <img 
-                src={`/images/service-${index + 1}.webp`} 
-                alt={item.title} 
-                className={`${SECTION.services.cardImagePlaceholder} w-full h-auto`} 
-                loading="lazy" 
-                decoding="async" 
-              />
-            </div>
-            <div className="flex-1 space-y-4">
-              <h3 className="font-heading text-2xl font-bold text-green-dark">{item.title}</h3>
-              <p className="font-sans text-slate-600 text-lg leading-relaxed">{item.description}</p>
-            </div>
-          </motion.div>
-        ))}
+      <div className="flex flex-col gap-x-12 md:gap-x-16 gap-y-4 md:gap-y-6 mt-12 max-w-5xl mx-auto px-6">
+        {CONTENT.services.items.map((item, index) => {
+          const shadowClass = index % 2 === 0 
+            ? 'shadow-[-12px_12px_20px_-5px_#1A5A29]' 
+            : 'shadow-[12px_12px_20px_-5px_#8CC63F]';
+
+          return (
+            <motion.div
+              key={item.title}
+              className={`flex flex-col gap-8 items-center ${index % 2 !== 0 ? 'md:flex-row-reverse' : 'md:flex-row'}`}
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, margin: "-50px" }}
+              transition={{ duration: 0.5 }}
+            >
+              <div className="flex-1 w-full flex items-center justify-center p-4">
+                <img 
+                  src={`/images/service-${index + 1}.webp`} 
+                  alt={item.title} 
+                  className={`${SECTION.services.cardImagePlaceholder} w-full h-auto ${shadowClass}`} 
+                  loading="lazy" 
+                  decoding="async" 
+                />
+              </div>
+              <div className="flex-1 space-y-4">
+                <h3 className="font-heading text-2xl font-bold text-green-dark">{item.title}</h3>
+                <p className="font-sans text-slate-600 text-lg leading-relaxed">{item.description}</p>
+              </div>
+            </motion.div>
+          );
+        })}
       </div>
     </section>
   );
