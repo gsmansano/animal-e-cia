@@ -11,7 +11,7 @@ export function Header() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   return (
-    <header className="bg-white shadow-sm py-4 fixed top-0 left-0 right-0 z-50 transition-all duration-300">
+    <header className="bg-green-light shadow-md py-3 fixed top-0 left-0 right-0 z-50 transition-all duration-300">
       <div className="max-w-7xl mx-auto px-6 flex items-center justify-between w-full">
         
         {/* Responsive Logos */}
@@ -39,7 +39,7 @@ export function Header() {
         </Link>
 
         {/* Desktop Nav */}
-        <nav className="hidden md:flex items-center gap-8">
+        <nav className="hidden md:flex items-center gap-6 bg-white px-6 py-2 rounded-full shadow-sm">
           {CONTENT.header.navLinks.map((link) => (
             <Link
               key={link.href}
@@ -80,7 +80,7 @@ export function Header() {
           href={CLINIC_INFO.whatsapp.link}
           target="_blank"
           rel="noopener noreferrer"
-          className={`${GLOBAL.primaryButton} !inline-flex flex-row items-center justify-center gap-2 whitespace-nowrap`}
+          className={`${GLOBAL.primaryButton} !inline-flex flex-row items-center justify-center gap-2 whitespace-nowrap border-2 border-white shadow-md`}
         >
           <MessageCircle className="w-5 h-5" />
           <span className="hidden md:inline">Fale com a gente!</span>

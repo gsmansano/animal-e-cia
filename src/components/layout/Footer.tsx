@@ -14,9 +14,9 @@ export function Footer() {
       <div className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-6">
         
         {/* Left: Logo */}
-        <div className="flex-shrink-0">
+        <div className="flex-shrink-0 bg-white p-2 rounded-xl shadow-sm">
           <img 
-            src="/images/logo-desktop.webp" 
+            src="/images/logo-mobile.webp" 
             alt="Animal & Cia Logo" 
             className="h-10 md:h-12 w-auto" 
             loading="lazy" 
@@ -70,11 +70,11 @@ export function Footer() {
         <div className="flex-shrink-0">
           <button 
             onClick={handleScrollToTop}
-            className="flex items-center gap-2 text-sm font-medium text-slate-500 hover:text-green-dark transition-colors group"
+            className="flex items-center gap-2 text-sm font-bold text-white hover:text-white/80 transition-colors group"
             aria-label="Voltar ao topo"
           >
             <span>Voltar ao topo</span>
-            <div className="bg-slate-100 group-hover:bg-green-light/20 p-2 rounded-full transition-colors">
+            <div className="bg-white/20 group-hover:bg-white/40 p-2 rounded-full transition-colors">
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="w-4 h-4">
                 <path d="m18 15-6-6-6 6"/>
               </svg>

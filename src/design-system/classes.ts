@@ -7,13 +7,13 @@ export const SECTION = {
   header: {
     wrapper: {
       base: "transition-all duration-300",
-      scrolled: "bg-white shadow-sm py-4",
-      transparent: "bg-transparent py-6",
+      scrolled: "bg-green-light shadow-sm py-3",
+      transparent: "bg-transparent py-5",
     },
-    logo: "font-heading text-2xl font-bold text-green-dark",
-    navLink: "text-slate-700 hover:text-green-dark transition-colors font-medium",
-    mobileMenuBtn: "text-green-dark p-2 focus:outline-none",
-    navMobileDrawer: "bg-white shadow-lg border-t border-slate-100",
+    logo: "bg-white p-1.5 md:p-2 rounded-xl shadow-sm block",
+    navLink: "text-green-dark font-bold hover:text-green-dark/80 transition-colors",
+    mobileMenuBtn: "text-white p-2 focus:outline-none",
+    navMobileDrawer: "bg-green-light shadow-lg border-t border-white/20",
   },
   
   hero: {
@@ -54,8 +54,8 @@ export const SECTION = {
   },
 
   footer: {
-    wrapper: "bg-white border-t border-slate-100 py-6",
-    link: "text-slate-600 hover:text-green-dark transition-colors",
-    copyright: "text-center text-sm text-slate-600",
+    wrapper: "bg-green-light py-6",
+    link: "text-white hover:text-white/80 transition-colors",
+    copyright: "text-center text-sm font-medium text-white",
   },
 } as const;
