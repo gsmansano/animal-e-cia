@@ -4,7 +4,7 @@ export const CLINIC_INFO: ClinicInfo = {
   name: "Animal & Cia",
   whatsapp: {
     number: "+5577998680996",
-    display: "77 9 9868-0996",
+    display: "(77) 9 9868-0996",
     link: "https://wa.me/5577998680996",
   },
   address: {

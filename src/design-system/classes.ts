@@ -47,6 +47,12 @@ export const SECTION = {
     bentoItem: "bg-slate-200 rounded-2xl shadow-sm text-slate-500 font-medium",
   },
 
+  contact: {
+    wrapper: "py-20 bg-slate-50",
+    h2: "font-heading text-3xl md:text-4xl font-bold text-green-dark",
+    p: "text-slate-600 text-lg",
+  },
+
   footer: {
     wrapper: "bg-green-dark text-white pt-16 pb-8",
     columnHeading: "font-heading text-xl font-bold text-pink",

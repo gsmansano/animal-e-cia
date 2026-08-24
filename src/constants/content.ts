@@ -72,6 +72,12 @@ export const CONTENT: ContentDictionary = {
     sectionTitle: "Onde Estamos",
     sectionSubtitle: "Venha nos visitar! Nossa clínica possui fácil acesso e excelente infraestrutura para receber você e seu pet.",
   },
+  contact: {
+    sectionTitle: "Fale com a gente!",
+    sectionSubtitle: "Tem alguma dúvida ou precisa agendar uma consulta? Nossa equipe está pronta para atender você e o seu pet com todo o carinho.",
+    buttonText: "Chame no WhatsApp",
+    qrHelper: "Escaneie para falar conosco",
+  },
   footer: {
     sections: {
       social: "Redes Sociais",

@@ -74,6 +74,12 @@ export interface ContentDictionary {
     sectionTitle: string;
     sectionSubtitle: string;
   };
+  contact: {
+    sectionTitle: string;
+    sectionSubtitle: string;
+    buttonText: string;
+    qrHelper: string;
+  };
   footer: {
     sections: {
       social: string;
