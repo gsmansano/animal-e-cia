@@ -12,7 +12,7 @@ export function Header() {
 
   return (
     <header className="bg-green-light shadow-md py-3 fixed top-0 left-0 right-0 z-50 transition-all duration-300">
-      <div className="max-w-7xl mx-auto px-6 flex items-center justify-between w-full">
+      <div className="max-w-7xl mx-auto px-6 flex items-center justify-between w-full relative">
         
         {/* Responsive Logos */}
         <Link href="/" className={SECTION.header.logo}>
@@ -53,7 +53,7 @@ export function Header() {
 
         {/* Mobile Menu Toggle */}
         <button
-          className={`${SECTION.header.mobileMenuBtn} md:hidden`}
+          className={`${SECTION.header.mobileMenuBtn} md:hidden absolute left-1/2 -translate-x-1/2`}
           onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
           aria-label="Abrir menu"
           aria-controls="mobile-menu"
@@ -89,14 +89,14 @@ export function Header() {
 
       {/* Mobile Menu Drawer */}
       {isMobileMenuOpen && (
-        <div id="mobile-menu" className={`${SECTION.header.navMobileDrawer} md:hidden absolute top-full left-0 right-0`}>
-          <nav className="flex flex-col p-6 gap-4">
+        <div id="mobile-menu" className={`${SECTION.header.navMobileDrawer} absolute top-[110%] left-1/2 -translate-x-1/2 w-64 md:hidden`}>
+          <nav className="flex flex-col p-4 gap-2">
             {CONTENT.header.navLinks.map((link) => (
               <Link
                 key={link.href}
                 href={link.href}
                 onClick={() => setIsMobileMenuOpen(false)}
-                className={`${SECTION.header.navLink} py-2 text-center`}
+                className="text-green-dark font-medium py-3 text-center rounded-xl hover:bg-green-light/10 transition-colors"
               >
                 {link.label}
               </Link>

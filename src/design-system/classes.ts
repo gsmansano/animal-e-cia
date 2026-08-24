@@ -13,7 +13,7 @@ export const SECTION = {
     logo: "bg-white p-1.5 md:p-2 rounded-xl shadow-sm block",
     navLink: "text-green-dark font-bold hover:text-green-dark/80 transition-colors",
     mobileMenuBtn: "text-white p-2 focus:outline-none",
-    navMobileDrawer: "bg-green-light shadow-lg border-t border-white/20",
+    navMobileDrawer: "bg-white border-2 border-green-light rounded-2xl shadow-xl",
   },
   
   hero: {
