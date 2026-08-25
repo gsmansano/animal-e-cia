@@ -60,6 +60,6 @@
 
 ## Milestone 6 - CI/CD & Production Deployment
 
-- **Step 1:** Automated Testing (Playwright E2E test).
-- **Step 2:** Continuous Integration (GitHub Actions for automated type-checking).
-- **Step 3:** Production Deployment (Connect repository to Cloudflare Pages).
+- **Step 1:** Continuous Integration (GitHub Actions for automated linting and type-checking).
+- **Step 2:** Production Deployment (Connect repository to Cloudflare Pages for static export).
+- **Step 3:** Domain & DNS Configuration (Connect production domain and verify SSL).
