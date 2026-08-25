@@ -26,8 +26,8 @@ export const CLINIC_INFO: ClinicInfo = {
       link: "https://instagram.com/animalecia.vet",
     },
     tiktok: {
-      handle: "@animal.cia",
-      link: "https://www.tiktok.com/@animal.cia",
+      handle: "@animalecia.vet",
+      link: "https://www.tiktok.com/@animalecia.vet",
     },
   },
   hours: [

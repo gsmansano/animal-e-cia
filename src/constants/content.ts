@@ -8,12 +8,12 @@ export const CONTENT: ContentDictionary = {
       { label: 'Localização', href: '#localizacao' },
       { label: 'Contato', href: '#contato' },
     ],
-    cta: "Fale no WhatsApp",
+    cta: "Fale com a gente!",
   },
   hero: {
     title: "O Cuidado que seu Pet Merece, Perto de Você",
     subtitle: "No Centro Veterinário Animal & Cia em Brumado, oferecemos estrutura completa, profissionais qualificados e muito amor para cuidar da saúde do seu melhor amigo.",
-    cta: "Agendar Consulta",
+    cta: "Como podemos ajudar?",
     imagePlaceholder: "Imagem Placeholder",
   },
   services: {
@@ -58,12 +58,12 @@ export const CONTENT: ContentDictionary = {
     sectionTitle: "Quem Cuida do Seu Pet",
     team: [
       {
-        name: "Dra. Nome da Médica",
+        name: "Dra. Ariadna Mansano (Lila)",
         role: "Médica Veterinária e Fundadora",
         bio: [
-          "Com anos de dedicação à medicina veterinária, a fundadora da Animal & Cia construiu sua carreira com base no amor e respeito aos animais.",
-          "Especializada em clínica médica e cirúrgica de pequenos animais, ela lidera uma equipe apaixonada por oferecer o melhor cuidado possível para o seu pet.",
-          "Acreditamos que cada animal é único e merece um atendimento humanizado, com infraestrutura de ponta e muito carinho."
+          "Mais conhecida por todos carinhosamente como Dra. Lila, Ariadna tem uma história que se entrelaça com a de Brumado. Com mais de 30 anos de carreira, ela foi a grande pioneira da medicina veterinária na região.",
+          "Fundadora da Animal & Cia, por muito tempo o único centro de referência da cidade, Dra. Lila possui diversas especializações em cirurgias e exames de diagnóstico, garantindo a excelência técnica que seu pet precisa.",
+          "Tendo acompanhado o crescimento de Brumado desde a juventude, ela construiu não apenas uma clínica, mas um legado de confiança. Hoje, ela alia suas três décadas de experiência clínica a um amor incondicional por cada paciente."
         ]
       }
     ]
@@ -73,13 +73,17 @@ export const CONTENT: ContentDictionary = {
     sectionSubtitle: "Venha nos visitar! Nossa clínica possui fácil acesso e excelente infraestrutura para receber você e seu pet.",
     directions: {
       title: "Como chegar",
-      text: "A clínica está localizada no centro da cidade, próxima à praça principal. Utilize o link do mapa abaixo para traçar a melhor rota."
+      text: [
+        "Estamos localizados bem no coração de Brumado, com fácil acesso para você e seu pet.",
+        "Para chegar, basta descer a rua aos fundos da Igreja Matriz, seguindo em direção à Praça da Prefeitura e à Praça do Cemitério.",
+        "Utilize o botão abaixo para traçar a rota exata no seu GPS!"
+      ]
     },
   },
   contact: {
     sectionTitle: "Fale com a gente!",
     sectionSubtitle: "Tem alguma dúvida ou precisa agendar uma consulta? Nossa equipe está pronta para atender você e o seu pet com todo o carinho.",
-    buttonText: "Chame no WhatsApp",
+    buttonText: "Tirar Dúvidas",
     qrHelper: "Escaneie para falar conosco",
   },
   footer: {

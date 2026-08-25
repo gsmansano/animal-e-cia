@@ -75,7 +75,7 @@ export interface ContentDictionary {
     sectionSubtitle: string;
     directions: {
       title: string;
-      text: string;
+      text: string[];
     };
   };
   contact: {

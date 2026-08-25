@@ -3,7 +3,7 @@
 import { motion } from "framer-motion";
 import { CONTENT } from "@/constants/content";
 import { CLINIC_INFO } from "@/constants/clinic-info";
-import { SECTION } from "@/design-system/classes";
+import { SECTION, GLOBAL } from "@/design-system/classes";
 
 export function Location() {
   return (
@@ -44,7 +44,27 @@ export function Location() {
             <p className="font-bold text-green-dark">
               {CONTENT.location.directions.title}:
             </p>
-            <p className="text-slate-600">{CONTENT.location.directions.text}</p>
+            <div className="space-y-4">
+              {CONTENT.location.directions.text.map((paragraph, index) => (
+                <p key={index} className="text-slate-600">{paragraph}</p>
+              ))}
+            </div>
+          </div>
+
+          <div className="pt-4">
+            <a
+              href={CLINIC_INFO.address.googleMapsRouteLink}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Traçar rota no Google Maps"
+              className={`${GLOBAL.secondaryButton} !inline-flex flex-row items-center justify-center gap-2 whitespace-nowrap`}
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                <circle cx="12" cy="10" r="3"></circle>
+              </svg>
+              <span>Traçar Rota</span>
+            </a>
           </div>
         </motion.div>
 

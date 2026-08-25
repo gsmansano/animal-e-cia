@@ -1,6 +1,7 @@
 export const GLOBAL = {
   container: "max-w-7xl mx-auto px-6",
   primaryButton: "inline-block bg-pink text-white font-bold py-3 px-6 rounded-lg hover:bg-pink/90 transition-colors",
+  secondaryButton: "inline-block bg-green-dark text-white font-bold py-3 px-6 rounded-lg hover:bg-green-dark/90 transition-colors",
 } as const;
 
 export const SECTION = {
