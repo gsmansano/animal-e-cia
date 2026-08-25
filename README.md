@@ -16,6 +16,13 @@ A premium, high-performance static landing page for the Animal & Cia veterinary 
 - **Strict Data Contracts:** All content (services, team, contact info) is centralized in `src/constants/content.ts` and `clinic-info.ts`, rigidly typed via TypeScript interfaces to prevent runtime errors.
 - **Isolated Design System:** Visual tokens (colors, typography, standard paddings) are centralized in `src/design-system/classes.ts`, while structural layout classes remain directly inline in JSX for maximum developer readability.
 - **WCAG Compliant:** Semantic HTML, ARIA attributes for interactive elements, and native image `loading`/`fetchPriority` attributes are strictly enforced.
+- **Zero-Dependency Iconography:** The project strictly relies on raw SVG paths to bypass third-party icon libraries, keeping the client bundle size absolutely minimal.
+
+## 🔄 CI/CD
+
+A GitHub Actions pipeline is configured to automatically run on every push to the `main` branch. It enforces code quality by executing:
+- **ESLint** & **TypeScript** type-checking.
+- **Static Export Verification** (`npm run build`) to guarantee that no dynamic server-side logic has accidentally leaked into the codebase.
 
 ## 💻 Getting Started
 
