@@ -33,7 +33,7 @@ export function About() {
               <img 
                 src="/images/about-1.webp" 
                 alt={member.name} 
-                className={`${SECTION.about.image} w-full aspect-[4/5] object-cover relative z-10`} 
+                className={`${SECTION.about.image} w-full aspect-[4/5] object-cover object-[center_25%] relative z-10 max-h-[60vh] 2xl:max-h-none`} 
                 loading="lazy" 
                 decoding="async" 
               />

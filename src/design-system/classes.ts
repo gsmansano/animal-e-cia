@@ -18,39 +18,39 @@ export const SECTION = {
   
   hero: {
     wrapper: "pt-32 pb-16 md:pt-40 md:pb-24 bg-slate-50",
-    h1: "font-heading text-4xl md:text-5xl lg:text-6xl font-bold text-green-dark leading-tight",
-    p: "text-lg text-slate-600",
+    h1: "font-heading text-4xl lg:text-4xl xl:text-5xl 2xl:text-6xl font-bold text-green-dark leading-tight",
+    p: "text-lg xl:text-xl text-slate-600",
     imagePlaceholder: "bg-green-light/20 rounded-3xl border-4 border-white shadow-xl text-green-dark/50 font-medium font-heading",
   },
   
   services: {
     wrapper: "py-12 bg-white",
-    h2: "font-heading text-3xl md:text-4xl font-bold text-green-dark",
-    p: "text-slate-600 text-lg",
+    h2: "font-heading text-3xl lg:text-3xl xl:text-4xl 2xl:text-5xl font-bold text-green-dark",
+    p: "text-slate-600 text-lg xl:text-xl",
     cardImagePlaceholder: "rounded-2xl object-cover",
   },
   
   about: {
     wrapper: "py-20 bg-slate-50",
-    h2: "font-heading text-3xl md:text-4xl font-bold text-green-dark",
+    h2: "font-heading text-3xl lg:text-3xl xl:text-4xl 2xl:text-5xl font-bold text-green-dark",
     imageOffsetBackground: "bg-green-light/20 rounded-2xl",
     image: "bg-slate-100 rounded-2xl shadow-lg text-slate-400 font-medium",
-    name: "font-heading text-3xl font-bold text-green-dark",
+    name: "font-heading text-2xl lg:text-2xl xl:text-3xl 2xl:text-4xl font-bold text-green-dark",
     role: "text-pink font-semibold text-lg",
-    bioText: "text-slate-600 leading-relaxed",
+    bioText: "text-base xl:text-lg text-slate-600 leading-relaxed",
   },
   
   location: {
     wrapper: "py-20 bg-white",
-    h2: "font-heading text-3xl md:text-4xl font-bold text-green-dark",
-    p: "text-slate-600 text-lg",
+    h2: "font-heading text-3xl lg:text-3xl xl:text-4xl 2xl:text-5xl font-bold text-green-dark",
+    p: "text-slate-600 text-lg xl:text-xl",
     bentoItem: "bg-slate-200 rounded-2xl text-slate-500 font-medium",
   },
 
   contact: {
     wrapper: "py-20 bg-slate-50",
-    h2: "font-heading text-3xl md:text-4xl font-bold text-green-dark",
-    p: "text-slate-600 text-lg",
+    h2: "font-heading text-3xl lg:text-3xl xl:text-4xl 2xl:text-5xl font-bold text-green-dark",
+    p: "text-slate-600 text-lg xl:text-xl",
   },
 
   footer: {
