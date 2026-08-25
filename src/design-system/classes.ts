@@ -20,7 +20,7 @@ export const SECTION = {
     wrapper: "pt-32 pb-16 md:pt-40 md:pb-24 bg-slate-50",
     h1: "font-heading text-4xl lg:text-4xl xl:text-5xl 2xl:text-6xl font-bold text-green-dark leading-tight",
     p: "text-lg xl:text-xl text-slate-600",
-    imagePlaceholder: "bg-green-light/20 rounded-3xl border-4 border-white shadow-xl text-green-dark/50 font-medium font-heading",
+    imagePlaceholder: "bg-green-light/20 rounded-3xl border-4 lg:border-4 border-white shadow-[0_20px_35px_-12px_#EA005E] lg:shadow-[0_20px_60px_-12px_#EA005E] text-green-dark/50 font-medium font-heading overflow-hidden",
   },
   
   services: {
@@ -33,7 +33,7 @@ export const SECTION = {
   about: {
     wrapper: "py-20 bg-slate-50",
     h2: "font-heading text-3xl lg:text-3xl xl:text-4xl 2xl:text-5xl font-bold text-green-dark",
-    imageOffsetBackground: "bg-green-light/20 rounded-2xl",
+    imageOffsetBackground: "bg-pink/20 rounded-2xl",
     image: "bg-slate-100 rounded-2xl shadow-lg text-slate-400 font-medium",
     name: "font-heading text-2xl lg:text-2xl xl:text-3xl 2xl:text-4xl font-bold text-green-dark",
     role: "text-pink font-semibold text-lg",
