@@ -42,9 +42,9 @@ export function Location() {
 
           <div className="space-y-2">
             <p className="font-bold text-green-dark">
-              {CLINIC_INFO.directions.title}:
+              {CONTENT.location.directions.title}:
             </p>
-            <p className="text-slate-600">{CLINIC_INFO.directions.text}</p>
+            <p className="text-slate-600">{CONTENT.location.directions.text}</p>
           </div>
         </motion.div>
 

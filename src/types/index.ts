@@ -32,10 +32,6 @@ export interface ClinicInfo {
     label: string;
     time: string;
   }[];
-  directions: {
-    title: string;
-    text: string;
-  };
 }
 
 export interface NavLink {
@@ -77,6 +73,10 @@ export interface ContentDictionary {
   location: {
     sectionTitle: string;
     sectionSubtitle: string;
+    directions: {
+      title: string;
+      text: string;
+    };
   };
   contact: {
     sectionTitle: string;

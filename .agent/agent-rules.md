@@ -30,7 +30,7 @@
 - **Accessibility (a11y):** Semantic HTML5 tags (`<main>`, `<nav>`, `<section>`, `<header>`, `<footer>`), valid heading hierarchy ($h1 \rightarrow h2 \rightarrow h3$), and descriptive `aria-label` tags for interactive elements.
 - **Lighthouse Performance:** Mandatory optimization using `next/image`, lazy loading for off-screen components, and zero unused dependencies to target a 100/100 Lighthouse score.
 - **Static Export Constraint:** Because the app uses `output: 'export'`, do NOT rely on Next.js native `<Image />` optimization. Use native `<img>` tags with explicit width/height and manual `.webp` assets.
-- **Iconography:** Strictly use lucide-react for all SVG icons to maintain a clean, uniform design language.
+- **Iconography:** Strictly use raw SVGs for performance and brand logos. `lucide-react` is banned to maintain a strict static export performance profile.
 - **Mobile-First Styling:** Tailwind classes must be written mobile-first. Base classes apply to mobile screens, with md:, lg:, and xl: prefixes used to scale up the UI for wider screens.
 - **Tailwind Cleanliness:** To keep JSX clean without premature component abstraction, avoid long inline Tailwind class strings. Instead, define reusable Tailwind class strings as constants inside `src/design-system/classes.ts` and import them into components.
 - **Tailwind Abstraction Scope:** Only abstract visual design tokens (colors, typography, buttons, reusable wrappers) into `classes.ts`. Structural layout classes (grid, flex, structural margins/padding) MUST remain inline in the JSX components for readability.

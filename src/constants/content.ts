@@ -71,6 +71,10 @@ export const CONTENT: ContentDictionary = {
   location: {
     sectionTitle: "Onde Estamos",
     sectionSubtitle: "Venha nos visitar! Nossa clínica possui fácil acesso e excelente infraestrutura para receber você e seu pet.",
+    directions: {
+      title: "Como chegar",
+      text: "A clínica está localizada no centro da cidade, próxima à praça principal. Utilize o link do mapa abaixo para traçar a melhor rota."
+    },
   },
   contact: {
     sectionTitle: "Fale com a gente!",

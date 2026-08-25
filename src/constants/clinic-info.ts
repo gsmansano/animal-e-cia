@@ -34,8 +34,4 @@ export const CLINIC_INFO: ClinicInfo = {
     { label: "Seg a Sex", time: "08h às 12h | 14h às 18h" },
     { label: "Sábado", time: "08h às 12h" }
   ],
-  directions: {
-    title: "Como chegar",
-    text: "A clínica está localizada no centro da cidade, próxima à praça principal. Utilize o link do mapa abaixo para traçar a melhor rota."
-  },
 };
