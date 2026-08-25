@@ -43,6 +43,7 @@ export function Hero() {
               href={CLINIC_INFO.whatsapp.link}
               target="_blank"
               rel="noopener noreferrer"
+              aria-label="Fale com a gente no WhatsApp"
               className={`${GLOBAL.primaryButton} !inline-flex flex-row items-center justify-center gap-2 whitespace-nowrap`}
             >
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-5 h-5">
@@ -64,6 +65,8 @@ export function Hero() {
             src="/images/hero-1.webp" 
             alt="Centro Veterinário Animal & Cia" 
             className={`${SECTION.hero.imagePlaceholder} w-full h-full object-cover object-[center_20%]`} 
+            width="1200"
+            height="1200"
             loading="eager" 
             fetchPriority="high" 
           />

@@ -34,6 +34,8 @@ export function About() {
                 src="/images/about-1.webp" 
                 alt={member.name} 
                 className={`${SECTION.about.image} w-full aspect-[4/5] object-cover object-[center_25%] relative z-10 max-h-[60vh] 2xl:max-h-none`} 
+                width="800"
+                height="1000"
                 loading="lazy" 
                 decoding="async" 
               />

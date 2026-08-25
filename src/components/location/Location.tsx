@@ -3,7 +3,7 @@
 import { motion } from "framer-motion";
 import { CONTENT } from "@/constants/content";
 import { CLINIC_INFO } from "@/constants/clinic-info";
-import { SECTION, GLOBAL } from "@/design-system/classes";
+import { SECTION } from "@/design-system/classes";
 
 export function Location() {
   return (
@@ -61,6 +61,8 @@ export function Location() {
               src="/images/location-1.webp" 
               alt="Fachada da clínica" 
               className={`${SECTION.location.bentoItem} shadow-[0_0_20px_-5px_#8CC63F] w-full h-full object-cover`} 
+              width="1920"
+              height="1080"
               loading="lazy" 
               decoding="async" 
             />
@@ -70,6 +72,8 @@ export function Location() {
               src="/images/location-2.webp" 
               alt="Recepção da clínica" 
               className={`${SECTION.location.bentoItem} shadow-[0_0_20px_-5px_#8CC63F] w-full h-full object-cover`} 
+              width="1000"
+              height="1000"
               loading="lazy" 
               decoding="async" 
             />

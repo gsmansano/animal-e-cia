@@ -48,6 +48,8 @@ export function Services() {
                   src={`/images/service-${index + 1}.webp`} 
                   alt={item.title} 
                   className={`${SECTION.services.cardImagePlaceholder} w-full h-auto ${shadowClass}`} 
+                  width="800"
+                  height="600"
                   loading="lazy" 
                   decoding="async" 
                 />

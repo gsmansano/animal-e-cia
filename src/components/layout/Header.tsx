@@ -80,6 +80,7 @@ export function Header() {
           href={CLINIC_INFO.whatsapp.link}
           target="_blank"
           rel="noopener noreferrer"
+          aria-label="Fale com a gente no WhatsApp"
           className={`${GLOBAL.primaryButton} !inline-flex flex-row items-center justify-center gap-2 whitespace-nowrap border-2 border-white shadow-md`}
         >
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-5 h-5">

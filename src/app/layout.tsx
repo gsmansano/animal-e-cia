@@ -46,7 +46,7 @@ export const metadata: Metadata = {
   },
 };
 
-// @ts-ignore
+
 export default function RootLayout({
   children,
 }: {

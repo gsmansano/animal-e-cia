@@ -34,6 +34,7 @@ export function Contact() {
                 href={CLINIC_INFO.whatsapp.link}
                 target="_blank"
                 rel="noopener noreferrer"
+                aria-label="Chame no WhatsApp"
                 className={`${GLOBAL.primaryButton} !inline-flex flex-row items-center justify-center gap-2 whitespace-nowrap`}
               >
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-5 h-5">
@@ -95,6 +96,8 @@ export function Contact() {
                 src="/images/qrcode.png" 
                 alt="WhatsApp QR Code" 
                 className="w-72 h-72 object-cover" 
+                width="400"
+                height="400"
                 loading="lazy" 
                 decoding="async" 
               />
