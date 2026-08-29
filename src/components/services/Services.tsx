@@ -7,7 +7,7 @@ import { SECTION } from "@/design-system/classes";
 export function Services() {
   return (
     <section id="servicos" className={SECTION.services.wrapper}>
-      <div className="text-center max-w-2xl mx-auto mb-16 px-6">
+      <div className="relative z-10 text-center max-w-2xl mx-auto mb-16 px-6">
         <motion.h2 
           className={`${SECTION.services.h2} mb-4`}
           initial={{ opacity: 0, y: 20 }}
@@ -28,7 +28,7 @@ export function Services() {
         </motion.p>
       </div>
 
-      <div className="flex flex-col gap-x-12 md:gap-x-16 gap-y-4 md:gap-y-6 mt-12 max-w-5xl mx-auto px-6">
+      <div className="relative z-10 flex flex-col gap-x-12 md:gap-x-16 gap-y-4 md:gap-y-6 mt-12 max-w-5xl mx-auto px-6">
         {CONTENT.services.items.map((item, index) => {
           const shadowClass = index % 2 === 0 
             ? 'shadow-[-12px_12px_20px_-5px_#1A5A29]' 
