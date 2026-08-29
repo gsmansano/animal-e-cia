@@ -24,7 +24,7 @@ export function Hero() {
 
   return (
     <section className={`${SECTION.hero.wrapper} relative overflow-hidden`}>
-      <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+      <div className="relative z-10 max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
         {/* Left Side Content */}
         <motion.div
           variants={containerVariants}

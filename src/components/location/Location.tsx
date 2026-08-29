@@ -8,7 +8,7 @@ import { SECTION, GLOBAL } from "@/design-system/classes";
 export function Location() {
   return (
     <section id="localizacao" className={SECTION.location.wrapper}>
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 max-w-7xl mx-auto px-6 items-start">
+      <div className="relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-12 max-w-7xl mx-auto px-6 items-start">
         {/* Left Column: Text & CTA */}
         <motion.div
           className="flex flex-col space-y-6"

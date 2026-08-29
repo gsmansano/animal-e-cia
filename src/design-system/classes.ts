@@ -1,7 +1,8 @@
 export const GLOBAL = {
-  container: "max-w-7xl mx-auto px-6",
+  container: "max-w-7xl mx-auto px-6 relative z-10",
   primaryButton: "inline-block bg-pink text-white font-bold py-3 px-6 rounded-lg hover:bg-pink/90 transition-colors",
   secondaryButton: "inline-block bg-green-dark text-white font-bold py-3 px-6 rounded-lg hover:bg-green-dark/90 transition-colors",
+  mainWrapper: "relative z-0 after:absolute after:inset-0 after:pointer-events-none after:z-0 after:bg-[url('/images/logo-background.png')] after:bg-[length:1000px_1000px] after:bg-repeat after:opacity-[0.25] after:mix-blend-multiply",
 } as const;
 
 export const SECTION = {

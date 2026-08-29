@@ -7,7 +7,7 @@ import { SECTION } from "@/design-system/classes";
 export function About() {
   return (
     <section id="sobre" className={SECTION.about.wrapper}>
-      <div className="text-center max-w-2xl mx-auto mb-16 px-6">
+      <div className="relative z-10 text-center max-w-2xl mx-auto mb-16 px-6">
         <motion.h2 
           className={`${SECTION.about.h2} mb-4`}
           initial={{ opacity: 0, y: 20 }}
@@ -19,7 +19,7 @@ export function About() {
         </motion.h2>
       </div>
 
-      <div className="space-y-24">
+      <div className="relative z-10 space-y-24">
         {CONTENT.about.team.map((member, index) => (
           <div key={member.name} className="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-16">
             <motion.div 

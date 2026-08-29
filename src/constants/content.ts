@@ -51,6 +51,10 @@ export const CONTENT: ContentDictionary = {
       {
         title: "Internamento",
         description: "Estrutura monitorada e confortável para a recuperação do seu animal sob cuidados veterinários contínuos."
+      },
+      {
+        title: "Animais Exóticos",
+        description: "Atendimento apropriado para animais não convencionais e exóticos. Todos os pets são bem-vindos."
       }
     ]
   },
